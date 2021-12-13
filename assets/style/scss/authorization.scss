@@ -1,0 +1,26 @@
+.authorization{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 1312px;
+        margin: auto;
+    }
+    &__wrap{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img{
+        position: relative;
+        margin-right: 63px;
+        >img{
+            @media screen and (max-height: 850px){
+                height: calc(100vh - 120px);
+            }
+        }
+    }
+    &__main{
+        width: calc(43.5% - 66px);
+    }
+}

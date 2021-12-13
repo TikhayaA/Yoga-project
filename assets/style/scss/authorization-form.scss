@@ -1,0 +1,80 @@
+.authorization-form{
+    width: 375px;
+    &__label{
+        color: $bali;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: -0.005em;
+        margin: 25px 0 15px;
+    }
+    &__input{
+        width: 100%;
+        background: $sunsetBreath5;
+        padding: 11px 10px;
+        color: $darkforest1;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        box-sizing: border-box;
+        border-radius: 2px;
+        &::placeholder{
+            font-size: 18px;
+            line-height: 27px;
+            color: $bali;
+            letter-spacing: -0.005em;
+            font-family: 'Poppins', sans-serif;
+        }
+        &_svg {
+            padding-right: 50px;
+        }
+    }
+    &__wrap-block-step-next{
+        margin-top: 21px;
+    }
+    &__label-mail{
+        position: relative;
+        &:after{
+            position: absolute;
+            content: url("../../svg/mail.svg");
+            top: 2px;
+            right: -359px;
+        }
+    }
+    &__label-password{
+        display: inline-flex;
+        width: 100%;
+        &:before{
+            position: absolute;
+            content: url("../../svg/eye.svg");
+            top: 49px;
+            right: 16px;
+        }
+        &:after{
+            content: none;
+        }
+    }
+    &__btn{
+        background: $darkforest3;
+        color: #FFF7FA;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23.99px;
+        line-height: 56px;
+        letter-spacing: -0.005em;
+        width: 375px;
+        position: absolute;
+        bottom: 0;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 2px;
+        &_sun{
+            background: $sun;
+            font-weight: normal;
+            font-size: 18px;
+        }
+    }
+    &__btn-title{
+        margin-right: 10px;
+    }
+}

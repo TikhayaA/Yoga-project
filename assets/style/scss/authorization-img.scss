@@ -1,0 +1,39 @@
+.authorization-img{
+    &__pos{
+        position: absolute;
+        left: 109px;
+    }
+    &__logo{
+        top: 20px;
+        left: 30px;
+    }
+    &__title{
+        top: 29%;
+        display: flex;
+        flex-direction: column;
+        :nth-child(2){
+            width: 205px;
+            margin-top: 23px;
+        }
+    }
+    &__title-second{
+        width: 205px;
+        margin-top: 23px;
+    }
+    &__accedi-wrap{
+        color: $bali5;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: -0.005em;
+        bottom: 56px;
+    }
+    &__accedi{
+        position: relative;
+        font-weight: 600;
+        margin-left: 9px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

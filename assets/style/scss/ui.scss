@@ -1,0 +1,23 @@
+$darkforest1: #264F4B;
+$darkforest2: #36706A;
+$darkforest3: #59AFA7;
+$darkforest4: #BDDFDC;
+$darkforest4: #DEEFED;
+$sun: #E99022;
+$bali:#B1E7D8;
+$bali5: #F5FCFA;
+$grey: #364140;
+$sunsetBreath1:#F5EDE2;
+$sunsetBreath4:#FAF6F1;
+$sunsetBreath5:#FDFBF8;
+.body-main{
+    background: $darkforest1;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    color: $sunsetBreath1;
+}
