@@ -17,6 +17,11 @@ $sunsetBreath5:#FDFBF8;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 740px){
+        height: 100%;
+        width: 100%;
+        overflow: unset;
+    }
 }
 body{
     color: $sunsetBreath1;

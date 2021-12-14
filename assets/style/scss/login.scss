@@ -1,0 +1,37 @@
+.login{
+    &__link{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13.5px;
+        line-height: 20px;
+        color: $bali;
+        text-align: right;
+        margin-top: 20px;
+        display: block;
+    }
+    .authorization-form__input_svg {
+        padding-right: 10px;
+        @media screen and (max-width: 740px){
+            padding-right: 50px;
+        }
+    }
+    .authorization-main__title{
+        line-height: 1;
+        margin-top: 0;
+    }
+    .authorization-form__btn{
+        position: static;
+        margin-top: 55px;
+    }
+    .authorization-form__label{
+        @media screen and (max-width: 740px){
+            display: none;
+        }
+    }
+    .authorization-form__label-mail,.authorization-form__label-password{
+        display: none;
+        @media screen and (max-width: 740px){
+            display: block;
+        }
+    }
+}

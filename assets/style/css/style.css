@@ -20,6 +20,11 @@
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media screen and (max-width: 740px) {
+    .body-main {
+      height: 100%;
+      width: 100%;
+      overflow: unset; } }
 
 body {
   color: #F5EDE2; }
@@ -31,17 +36,65 @@ body {
   .authorization .container {
     width: 1312px;
     margin: auto; }
+    @media screen and (max-width: 1360px) {
+      .authorization .container {
+        width: 90%; } }
+    @media screen and (max-width: 1360px) {
+      .authorization .container {
+        width: 90%; } }
+    @media screen and (max-width: 740px) {
+      .authorization .container {
+        width: 100%; } }
   .authorization__wrap {
     display: flex;
     justify-content: center; }
+    @media screen and (max-width: 800px) {
+      .authorization__wrap {
+        justify-content: space-between; } }
+    @media screen and (max-width: 740px) {
+      .authorization__wrap {
+        flex-direction: column;
+        align-items: center; } }
   .authorization__img {
     position: relative;
     margin-right: 63px; }
-    @media screen and (max-height: 850px) {
-      .authorization__img > img {
-        height: calc(100vh - 120px); } }
+    @media screen and (max-width: 1150px) {
+      .authorization__img {
+        width: 50%; } }
+    @media screen and (max-width: 900px) {
+      .authorization__img {
+        margin-right: 30px; } }
+    @media screen and (max-width: 767px) {
+      .authorization__img {
+        margin-right: 0px; } }
+    .authorization__img > img {
+      width: 100%; }
+      @media screen and (max-width: 740px) {
+        .authorization__img > img {
+          margin: 0;
+          position: absolute;
+          width: 120%;
+          top: -20%;
+          right: -17%; } }
   .authorization__main {
     width: calc(43.5% - 66px); }
+    @media screen and (max-width: 1150px) {
+      .authorization__main {
+        width: 43%; } }
+    @media screen and (max-width: 800px) {
+      .authorization__main {
+        width: 47%; } }
+    @media screen and (max-width: 740px) {
+      .authorization__main {
+        width: 355px;
+        text-align: center; } }
+    @media screen and (max-width: 361px) {
+      .authorization__main {
+        width: 300px;
+        text-align: center; } }
+  .authorization__link {
+    text-decoration: underline;
+    font-weight: 600; }
 
 .authorization-main {
   position: relative; }
@@ -52,7 +105,22 @@ body {
     font-size: 42.6407px;
     line-height: 64px;
     letter-spacing: -0.005em;
-    margin: 189px 0 50px; }
+    margin-bottom: 50px;
+    margin-top: 34%; }
+    @media screen and (max-width: 1150px) {
+      .authorization-main__title {
+        margin-top: 17%; } }
+    @media screen and (max-width: 1050px) {
+      .authorization-main__title {
+        margin: 0 0 30px;
+        line-height: 35px;
+        font-size: 36px; } }
+    @media screen and (max-width: 767px) {
+      .authorization-main__title {
+        font-size: 34px; } }
+    @media screen and (max-width: 740px) {
+      .authorization-main__title {
+        margin: 40px; } }
   .authorization-main__description {
     font-style: normal;
     font-weight: 400;
@@ -60,10 +128,26 @@ body {
     line-height: 27px;
     letter-spacing: -0.005em;
     color: #B1E7D8; }
+    @media screen and (max-width: 900px) {
+      .authorization-main__description {
+        font-size: 17px;
+        line-height: 22px; } }
+    @media screen and (max-width: 740px) {
+      .authorization-main__description {
+        width: 98%; } }
     .authorization-main__description_weight {
       font-weight: 600; }
+      @media screen and (max-width: 740px) {
+        .authorization-main__description_weight {
+          font-size: 20px;
+          line-height: 24px; } }
     .authorization-main__description_step-richiedi-email {
       margin-top: 50px; }
+  .authorization-main .br-resp {
+    display: none; }
+    @media screen and (max-width: 740px) {
+      .authorization-main .br-resp {
+        display: block; } }
   .authorization-main__name-user {
     color: #E99022; }
   .authorization-main__step-richiedi-email {
@@ -72,19 +156,56 @@ body {
       line-height: 48px;
       margin-bottom: 16px; }
 
+@media screen and (max-width: 1150px) {
+  .authorization-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; } }
+@media screen and (max-width: 740px) {
+  .authorization-img {
+    height: 266px;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 50px;
+    box-sizing: border-box; } }
 .authorization-img__pos {
   position: absolute;
   left: 109px; }
+  @media screen and (max-width: 1150px) {
+    .authorization-img__pos {
+      left: 30px; } }
+  @media screen and (max-width: 740px) {
+    .authorization-img__pos {
+      position: static;
+      z-index: 1; } }
 .authorization-img__logo {
   top: 20px;
   left: 30px; }
+  @media screen and (max-width: 740px) {
+    .authorization-img__logo {
+      margin-right: 10px; } }
+  .authorization-img__logo img {
+    width: 65px; }
 .authorization-img__title {
   top: 29%;
   display: flex;
   flex-direction: column; }
+  @media screen and (max-width: 740px) {
+    .authorization-img__title img {
+      height: 70px; } }
+  @media screen and (max-width: 900px) {
+    .authorization-img__title {
+      width: 70%; } }
+  @media screen and (max-width: 740px) {
+    .authorization-img__title {
+      width: 182px;
+      height: 70px; } }
   .authorization-img__title :nth-child(2) {
     width: 205px;
     margin-top: 23px; }
+    @media screen and (max-width: 740px) {
+      .authorization-img__title :nth-child(2) {
+        display: none; } }
 .authorization-img__title-second {
   width: 205px;
   margin-top: 23px; }
@@ -96,15 +217,28 @@ body {
   line-height: 27px;
   letter-spacing: -0.005em;
   bottom: 56px; }
+  @media screen and (max-width: 740px) {
+    .authorization-img__accedi-wrap {
+      margin-top: 30px;
+      width: 100%;
+      text-align: center; } }
 .authorization-img__accedi {
   position: relative;
-  font-weight: 600;
-  margin-left: 9px;
-  text-decoration: underline;
-  cursor: pointer; }
+  margin-left: 9px; }
 
 .authorization-form {
-  width: 375px; }
+  width: 375px;
+  margin-top: 25px; }
+  @media screen and (max-width: 1150px) {
+    .authorization-form {
+      width: 330px; } }
+  @media screen and (max-width: 740px) {
+    .authorization-form {
+      margin: 89px auto 30px;
+      width: 100%; } }
+  @media screen and (max-width: 370px) {
+    .authorization-form {
+      width: 300px; } }
   .authorization-form__label {
     color: #B1E7D8;
     font-style: normal;
@@ -112,7 +246,10 @@ body {
     font-size: 18px;
     line-height: 27px;
     letter-spacing: -0.005em;
-    margin: 25px 0 15px; }
+    margin-bottom: 15px; }
+    @media screen and (max-width: 900px) {
+      .authorization-form__label {
+        font-size: 17px; } }
   .authorization-form__input {
     width: 100%;
     background: #FDFBF8;
@@ -129,6 +266,9 @@ body {
       color: #B1E7D8;
       letter-spacing: -0.005em;
       font-family: 'Poppins', sans-serif; }
+      @media screen and (max-width: 900px) {
+        .authorization-form__input::placeholder {
+          font-size: 16px; } }
     .authorization-form__input_svg {
       padding-right: 50px; }
   .authorization-form__wrap-block-step-next {
@@ -140,16 +280,23 @@ body {
       content: url("../../svg/mail.svg");
       top: 2px;
       right: -359px; }
+      @media screen and (max-width: 1360px) {
+        .authorization-form__label-mail:after {
+          right: -317px; } }
+      @media screen and (max-width: 740px) {
+        .authorization-form__label-mail:after {
+          right: -344px; } }
+      @media screen and (max-width: 370px) {
+        .authorization-form__label-mail:after {
+          right: -290px; } }
   .authorization-form__label-password {
     display: inline-flex;
     width: 100%; }
-    .authorization-form__label-password:before {
+    .authorization-form__label-password:after {
       position: absolute;
       content: url("../../svg/eye.svg");
-      top: 49px;
-      right: 16px; }
-    .authorization-form__label-password:after {
-      content: none; }
+      top: 10px;
+      right: 12px; }
   .authorization-form__btn {
     background: #59AFA7;
     color: #FFF7FA;
@@ -163,17 +310,40 @@ body {
     bottom: 0;
     font-family: 'Poppins', sans-serif;
     border-radius: 2px; }
+    @media screen and (max-width: 1150px) {
+      .authorization-form__btn {
+        width: 330px; } }
+    @media screen and (max-width: 740px) {
+      .authorization-form__btn {
+        position: static;
+        margin-top: 120px;
+        width: 355px; } }
+    @media screen and (max-width: 370px) {
+      .authorization-form__btn {
+        width: 300px;
+        line-height: 48px;
+        font-size: 22px; } }
+    @media screen and (max-width: 740px) {
+      .authorization-form__btn > img {
+        width: 24.8px; } }
     .authorization-form__btn_sun {
       background: #E99022;
       font-weight: normal;
       font-size: 18px; }
   .authorization-form__btn-title {
     margin-right: 10px; }
+  .authorization-form .terms-of-use {
+    position: absolute;
+    bottom: 100px;
+    width: 73%; }
 
 .authorization-radio {
   display: flex;
   justify-content: space-between;
   width: 92%; }
+  @media screen and (max-width: 740px) {
+    .authorization-radio {
+      width: 100%; } }
   .authorization-radio__item {
     position: relative;
     width: 104px; }
@@ -216,6 +386,72 @@ body {
     height: 68px; }
   .authorization-radio .authorization-radio__custom:checked + label::before {
     background: #36706A; }
+
+.authorization-checkbox {
+  margin-top: 40px; }
+  .authorization-checkbox__item {
+    margin-bottom: 23px; }
+  .authorization-checkbox__label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.005em;
+    color: #F5FCFA;
+    margin-left: 34px;
+    cursor: pointer; }
+    .authorization-checkbox__label a {
+      margin-left: 5px; }
+  .authorization-checkbox__custom {
+    position: absolute;
+    z-index: -1;
+    opacity: 0; }
+  .authorization-checkbox .authorization-checkbox__custom + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none; }
+  .authorization-checkbox .authorization-checkbox__custom + label::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    border: 2px solid #36706A;
+    background: #FDFBF8;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    left: 0;
+    z-index: -1; }
+  .authorization-checkbox .authorization-checkbox__custom:checked + label::before {
+    background: #36706A; }
+
+.login__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.5px;
+  line-height: 20px;
+  color: #B1E7D8;
+  text-align: right;
+  margin-top: 20px;
+  display: block; }
+.login .authorization-form__input_svg {
+  padding-right: 10px; }
+  @media screen and (max-width: 740px) {
+    .login .authorization-form__input_svg {
+      padding-right: 50px; } }
+.login .authorization-main__title {
+  line-height: 1;
+  margin-top: 0; }
+.login .authorization-form__btn {
+  position: static;
+  margin-top: 55px; }
+@media screen and (max-width: 740px) {
+  .login .authorization-form__label {
+    display: none; } }
+.login .authorization-form__label-mail, .login .authorization-form__label-password {
+  display: none; }
+  @media screen and (max-width: 740px) {
+    .login .authorization-form__label-mail, .login .authorization-form__label-password {
+      display: block; } }
 
 body {
   font-family: 'Poppins', sans-serif; }

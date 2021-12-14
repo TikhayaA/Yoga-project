@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     width: 92%;
+    @media screen and (max-width: 740px){
+        width: 100%;
+    }
     &__item{
         position: relative;
         width: 104px;
@@ -32,8 +35,8 @@
         display: inline-flex;
         align-items: center;
         user-select: none;
-      }
-      .authorization-radio__custom + label::before {
+    }
+    .authorization-radio__custom + label::before {
         content: '';
         position: absolute;
         display: inline-block;
@@ -44,12 +47,12 @@
         border-radius: 2px;
         background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
         z-index: -1;
-      }
-      .authorization-step-4 + label::before{
+    }
+    .authorization-step-4 + label::before{
         width: 112px;
         height: 68px;
-      }
-      .authorization-radio__custom:checked+label::before {
+    }
+    .authorization-radio__custom:checked+label::before {
         background: $darkforest2;
-      }
+    }
  }

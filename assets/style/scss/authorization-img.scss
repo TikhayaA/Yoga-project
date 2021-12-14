@@ -1,19 +1,59 @@
 .authorization-img{
+    @media screen and (max-width: 1150px){
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: 740px){
+        height: 266px;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 50px;
+        box-sizing: border-box;
+    }
     &__pos{
         position: absolute;
         left: 109px;
+        @media screen and (max-width: 1150px){
+            left: 30px;
+        }
+        @media screen and (max-width: 740px){
+            position: static;
+            z-index: 1;
+        }
     }
     &__logo{
         top: 20px;
         left: 30px;
+        @media screen and (max-width: 740px){
+            margin-right: 10px;
+        }
+        img{
+            width: 65px;
+        }
     }
     &__title{
         top: 29%;
         display: flex;
         flex-direction: column;
+        img{
+            @media screen and (max-width: 740px){
+                height: 70px;
+            }
+        }
+        @media screen and (max-width: 900px){
+            width: 70%;
+        }
+        @media screen and (max-width: 740px){
+            width: 182px;
+            height: 70px;
+        }
         :nth-child(2){
             width: 205px;
             margin-top: 23px;
+            @media screen and (max-width: 740px){
+                display: none;
+            }
         }
     }
     &__title-second{
@@ -28,12 +68,14 @@
         line-height: 27px;
         letter-spacing: -0.005em;
         bottom: 56px;
+        @media screen and (max-width: 740px){
+            margin-top: 30px;
+            width: 100%;
+            text-align: center
+        }
     }
     &__accedi{
         position: relative;
-        font-weight: 600;
         margin-left: 9px;
-        text-decoration: underline;
-        cursor: pointer;
     }
 }
