@@ -1,7 +1,25 @@
 .authorization-checkbox{
     margin-top: 40px;
+    @media screen and (min-width: 740px) and (max-width: 1050px){
+        margin-top: 5px;
+    }
+    @media screen and (max-width: 740px){
+        width: 95%;
+        margin: 40px auto;
+        margin-bottom: 55px;
+    }
+    @media screen and (max-width: 370px){
+        width: 100%;
+    }
     &__item{
         margin-bottom: 23px;
+        @media screen and (min-width: 740px) and (max-width: 1050px){
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width: 740px){
+            text-align: left;
+            margin-bottom: 33px;
+        }
     }
     &__label{
         font-style: normal;
@@ -10,8 +28,16 @@
         line-height: 27px;
         letter-spacing: -0.005em;
         color: #F5FCFA;
-        margin-left: 34px;
+        padding-left: 34px;
         cursor: pointer;
+        @media screen and (max-width: 740px){
+            padding-left: 50px;
+            font-size: 17px;
+            line-height: 21px;
+        }
+        @media screen and (max-width: 350px){
+            padding-left: 34px;
+        }
         a{
             margin-left: 5px;
         }
@@ -33,12 +59,24 @@
         border: 2px solid #36706A;
         background: $sunsetBreath5;
         background-repeat: no-repeat;
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
         left: 0;
         z-index: -1;
+        @media screen and (min-width: 740px) and (max-width: 1050px){
+            width: 18px;
+            height: 18px;
+        }
+        @media screen and (max-width: 740px){
+            left: 25px;
+        }
+        @media screen and (max-width: 350px){
+            left: 10px;
+            width: 20px;
+            height: 20px;
+        }
     }
     .authorization-checkbox__custom:checked+label::before {
-        background: $darkforest2;
+        content: url('../../svg/check-solid.svg');
     }
 }

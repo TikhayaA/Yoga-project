@@ -15,6 +15,9 @@
             width: 100%;
         }
     }
+    @media screen and (max-width: 740px){
+            width: 100%;
+    }
     &__wrap{
         display: flex;
         justify-content: center;
@@ -52,6 +55,9 @@
     }
     &__main{
         width: calc(43.5% - 66px);
+        @media screen and (max-width: 1400px){
+            width: 51%;
+        }
         @media screen and (max-width: 1150px){
             width: 43%;
         }
@@ -70,5 +76,112 @@
     &__link{
         text-decoration: underline;
         font-weight: 600;
+    }
+    &__last-step{
+        .authorization-main__title{
+            @media screen and (max-width: 1400px){
+                margin-bottom: 40px;
+            }
+        }
+        .authorization-form{
+            @media screen and (max-width: 740px){
+                margin-top: 10px;
+            }
+        }
+        .authorization-form__btn{
+            @media screen and (max-width: 740px){
+                margin-top: 50px;
+            }
+        }
+    }
+    &__first-step{
+        .authorization-main__title{
+            @media screen and (max-width: 740px){
+                margin-bottom: 40px;
+            }
+        }
+    }
+    &__step-seven{
+        .authorization-main__title{
+            @media screen and (max-width: 740px){
+                margin-bottom: 40px;
+            }
+        }
+        .authorization__main {
+            @media screen and (min-width: 740px) and (max-width: 950px){
+                width: 46%;
+            }
+        }
+        .authorization-form{
+            @media screen and (max-width: 900px){
+                margin-top: 0px;
+            }
+            @media screen and (max-width: 740px){
+                margin-top: 55px;
+            }
+        }
+        .authorization-form__label{
+            @media screen and (max-width: 740px){
+                margin: 20px 0 0;
+            }
+        }
+        .authorization-form__btn{
+            @media screen and (max-width: 740px){
+                margin-top: 80px;
+            }
+        }
+    }
+    &__step-six{
+        .authorization-main__description{
+            @media screen and (max-width: 740px){
+                width: 70%;
+                margin: 0 auto 45px;
+            }
+        }
+    }
+    &__step-six-next{
+        .authorization-main{
+            @media screen and (min-width: 1400px){
+                width: calc(31.5% - 66px);
+            }
+            @media screen and (max-width: 740px){
+                text-align: left;
+            }
+        }
+        .authorization-main__title{
+            line-height: 48px;
+            margin-bottom: 16px;
+            @media screen and (max-width: 740px){
+               padding-left: 20px;
+            }
+        }
+        .authorization-main__description{
+            @media screen and (max-width: 740px){
+                padding-left: 20px;
+                box-sizing: border-box;
+             }
+        }
+        
+    }
+    &__recovery-password{
+        .authorization-main__description{
+            @media screen and (max-width: 740px){
+                width: 90%;
+                margin: auto;
+                text-align: left;
+            }
+        }
+        .authorization-main__description_weight{
+            @media screen and (max-width: 740px){
+                font-weight: normal;
+            }
+        }
+    }
+    &__step-five{
+        .authorization-form__btn{
+            @media screen and (max-width: 740px){
+                margin-top: 80px;
+            }
+        }
     }
 }

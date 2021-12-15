@@ -3,18 +3,22 @@
     margin-top: 25px;
     @media screen and (max-width: 1150px){
         width: 330px;
+        margin-top: 20px;
     }
     @media screen and (max-width: 740px){
-        margin: 89px auto 30px;
+        margin: 80px auto 30px;
         width: 100%;
     }
     @media screen and (max-width: 370px){
-        width: 300px;
+        width: 93%;
+    }
+    @media screen and (max-width: 350px){
+        width: 95%;
     }
     &__label{
         color: $bali;
         font-style: normal;
-        font-weight: 400;
+        font-weight: normal;
         font-size: 18px;
         line-height: 27px;
         letter-spacing: -0.005em;
@@ -48,24 +52,20 @@
         }
     }
     &__wrap-block-step-next{
-        margin-top: 21px;
+        margin-bottom: 21px;
+        @media screen and (max-width: 900px){
+            margin-bottom: 5px;
+        }
     }
     &__label-mail{
         position: relative;
+        display: block;
         &:after{
             position: absolute;
-            content: url("../../svg/mail.svg");
-            top: 2px;
-            right: -359px;
-            @media screen and (max-width: 1360px){
-                right: -317px;
-            }
-            @media screen and (max-width: 740px){
-                right: -344px;
-            }
-            @media screen and (max-width: 370px){
-                right: -290px;
-            }
+            content: url("../../svg/envelope-regular.svg");
+            top: 11px;
+            right: 10px;
+            width: 20px;
         }
     }
     &__label-password{
@@ -93,16 +93,20 @@
         border-radius: 2px;
         @media screen and (max-width: 1150px){
             width: 330px;
+            font-size: 22px;
         }
         @media screen and (max-width: 740px){
             position: static;
             margin-top: 120px;
             width: 355px;
+            line-height: 48px;
+            
         }
         @media screen and (max-width: 370px){
-            width: 300px;
-            line-height: 48px;
-            font-size: 22px;
+            width: 100%;
+        }
+        @media screen and (max-width: 360px){
+            font-size: 18px;
         }
         >img{
             @media screen and (max-width: 740px){
@@ -122,5 +126,12 @@
         position: absolute;
         bottom: 100px;
         width: 73%;
+        @media screen and (max-width: 1400px){
+            position: static;
+            width: 100%;
+        }
+        @media screen and (max-width: 1200px){
+            position: static;
+        }
     }
 }

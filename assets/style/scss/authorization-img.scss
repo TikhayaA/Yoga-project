@@ -5,7 +5,7 @@
         flex-wrap: wrap;
     }
     @media screen and (max-width: 740px){
-        height: 266px;
+        height: 213px;
         overflow: hidden;
         width: 100%;
         padding-top: 50px;
@@ -29,7 +29,9 @@
             margin-right: 10px;
         }
         img{
-            width: 65px;
+            @media screen and (max-width: 740px){
+                width: 65px;
+            }
         }
     }
     &__title{
@@ -69,13 +71,28 @@
         letter-spacing: -0.005em;
         bottom: 56px;
         @media screen and (max-width: 740px){
-            margin-top: 30px;
+            margin-top: 11px;
             width: 100%;
-            text-align: center
+            text-align: center;
+            font-size: 15px;
+            line-height: 20px;
         }
     }
     &__accedi{
         position: relative;
         margin-left: 9px;
+    }
+    &__login{
+        >img{
+            @media screen and (max-width: 740px){
+                top: -16%;
+                right: -60%;
+                transform: scale(2);
+            }
+            @media screen and (max-width: 500px){
+                top: 35%;
+            }
+        }
+       
     }
 }

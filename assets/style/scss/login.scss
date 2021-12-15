@@ -16,12 +16,25 @@
         }
     }
     .authorization-main__title{
-        line-height: 1;
-        margin-top: 0;
+        @media screen and (min-width: 741px){
+            margin: 0 0 10px;
+        }
+    }
+    .authorization-form {
+        margin-top: 20px;
+    }
+    .authorization-form__label{
+        margin-bottom: 2px;
+    }
+    .authorization-form__wrap-block-step-next{
+        margin-top: 24px;
     }
     .authorization-form__btn{
         position: static;
         margin-top: 55px;
+        @media screen and (min-width: 741px) and (max-width: 1150px){
+            position: absolute;
+        }
     }
     .authorization-form__label{
         @media screen and (max-width: 740px){
