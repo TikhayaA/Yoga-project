@@ -1,0 +1,105 @@
+.bell{
+    position: relative;
+    &__icon{
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background: $sun;
+        width: 24px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: -3px;
+        top: 6px;
+    }
+    &__number{
+        letter-spacing: -0.08px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+    }
+    &__list-wrap{
+        width: 200px;
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+    }
+    &__list{
+        width: 100%;
+        height: fit-content;
+        background: $darkforest3;
+        border-radius: 2px;
+        padding: 1px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+        margin-top: 23px;
+        :nth-child(1){
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+        }
+        :last-child{
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+            margin-bottom: 0px;
+        }
+    }
+    &__list-item{
+        position: relative;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        color: $darkforest1;
+        background: $darkforest4;
+        padding: 5px 25px;
+        margin-bottom: 1px;
+        &:after{
+            position: absolute;
+            content: url("../../svg/bell2.svg");
+            left: 5px;
+            top: 50%;
+            transform: translate(0, -50%);
+            -webkit-transform: translate(0, -50%);
+            -moz-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+            -o-transform: translate(0, -50%);
+        }
+        &:before{
+            position: absolute;
+            content: url("../../svg/cross.svg");
+            right: 5px;
+            top: 50%;
+            transform: translate(0, -50%);
+            -webkit-transform: translate(0, -50%);
+            -moz-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+            -o-transform: translate(0, -50%);
+            cursor: pointer;
+            width: 15px;
+            height: 20px;
+        }
+        &_single{
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+        }
+    }
+   
+}

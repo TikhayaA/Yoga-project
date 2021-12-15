@@ -1,0 +1,19 @@
+.profile-icon{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: $sun;
+    border: 2px solid $sun;
+    position: relative;
+    overflow: hidden;
+    img{
+        width: 32px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

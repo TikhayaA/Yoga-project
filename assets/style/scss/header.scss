@@ -1,0 +1,22 @@
+.header{
+    height: 68px;
+    line-height: 68px;
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 22px;
+    }
+    &__svg-list{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        path{
+            fill:$bali5;
+        }
+    }
+}

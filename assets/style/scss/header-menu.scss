@@ -1,0 +1,20 @@
+.header-menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+    position: relative;
+    &__list{
+        margin-left: 70px;
+        display: flex;
+        cursor: pointer;
+    }
+    &__list-profile-icon{
+        &:after{
+            position: absolute;
+            content: url("../../svg/Vector-list.svg");
+            top: 0;
+            right: -20px;
+        }
+    }
+}
