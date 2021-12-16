@@ -1,0 +1,78 @@
+.course-pop-up{
+    width: 786px;
+    position: absolute;
+    background: $darkforest2;
+    z-index: 2;
+    top: 26px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    &__cross{
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        top: 50px;
+        right: 30px;
+        cursor: pointer;
+        z-index: 1;
+        &:after{
+            position: absolute;
+            content: url("../../svg/cross-pop-up.svg");
+        }
+    }
+    .btn-ligth{
+        width: 365px;
+        padding: 17px 0 16px;
+        margin-right: 10px;
+    }
+    .btn-like{
+        background: $darkforest3;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        cursor: pointer;
+        &:after{
+            position: absolute;
+            content: url("../../svg/heart-course-card.svg");
+            transform: translate(0, -50%);
+            top: 50%;
+        }
+
+    }
+    .main-title{
+        font-size: 34px;
+    }
+    .banner{
+        height: 514px;
+        padding: 320px 20px 20px;
+        box-sizing: border-box;
+    }
+    .banner__btn-wrap {
+      margin-bottom: 10px;   
+    }
+    &__descriptions{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        >:nth-child(1){
+            width: 51%;
+        }
+        >:nth-child(2){
+            text-align: right;
+        }
+    }
+    &__descriptions-text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13.5034px;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
+    &__descriptions-weight-text{
+        font-weight: 600;
+    }
+    &__list-title{
+        font-size: 28px;
+        line-height: 42px;
+        margin-bottom: 40px;
+    }
+}

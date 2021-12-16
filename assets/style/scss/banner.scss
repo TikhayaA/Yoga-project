@@ -5,4 +5,62 @@
     background-size: cover;
     background-blend-mode: normal, lighten, normal;
     background-position: center;
+    position: relative;
+    
+    &__p{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 29px;
+        width: 40%;
+    }
+    &__btn-wrap{
+        display: flex;
+        margin: 10px 0 162px;
+    }
+    &__content-wrap{
+        padding-top: 280px;
+    }
+    .btn-main{
+        background: $sun;
+        width: 380px;
+        color: $bali5;
+        padding: 10px 0;
+        box-shadow: 0px 6px 12px -6px rgba(39, 79, 75, 0.25);
+        margin-right: 20px;
+    }
+    .btn-ligth{
+        padding: 10px 20px;
+        color: #264F4B;
+    }
+    &__files{
+        background: #364140;
+        border-radius: 0px 2px 2px 0px;
+        padding: 3px 6px 3px 72px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13.5px;
+        line-height: 24px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: 23%;
+    }
+    &__files-number{
+        margin-right: 5px;
+        font-weight: 600;
+        position: relative;
+        &:after{
+            position: absolute;
+            content: url("../../svg/files.svg");
+            left: -27px;
+        }
+    }
+}
+.main-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56.8391px;
+    line-height: 52px;
+    margin-bottom: 10px;
 }

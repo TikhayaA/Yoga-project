@@ -5,16 +5,17 @@
     width: 40%;
     position: relative;
     &__list{
-        margin-left: 70px;
+        margin-left: 62px;
         display: flex;
         cursor: pointer;
     }
     &__list-profile-icon{
+        margin-left: 52px;
         &:after{
             position: absolute;
             content: url("../../svg/Vector-list.svg");
             top: 0;
-            right: -20px;
+            right: -16px;
         }
     }
 }

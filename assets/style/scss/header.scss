@@ -1,10 +1,12 @@
 .header{
     height: 68px;
     line-height: 68px;
+    background: $darkforest1;
     &__wrap{
         display: flex;
         justify-content: space-between;
-        padding-right: 22px;
+        padding-right: 13px;
+        box-sizing: border-box;
     }
     &__svg-list{
         position: absolute;
@@ -20,3 +22,4 @@
         }
     }
 }
+    

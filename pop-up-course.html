@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <title>Pop-up-course</title>
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+      <link href="assets/style/css/reset.css" rel="stylesheet"> 
+      <link href="assets/style/css/style.css" rel="stylesheet">
+   </head>
+   <body>
+       <div class="background-pop-up"></div>
+       <header class="header">
+          <div class="container header__wrap">
+            <div class="header__logo"><img src="assets/svg/logo-header.svg" alt=""></div>
+            <ul class="header__menu header-menu">
+               <li class="header-menu__list header-menu__search">
+                  <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M24.1147 22.0004C23.4512 21.3649 22.8055 20.7111 22.1782 20.0399C21.6512 19.5044 21.3339 19.1148 21.3339 19.1148L17.3675 17.2209C18.9555 15.4199 19.8319 13.1014 19.8324 10.7004C19.8324 5.23378 15.3843 0.784302 9.9163 0.784302C4.4483 0.784302 0.000244141 5.23378 0.000244141 10.7004C0.000244141 16.1669 4.4483 20.6164 9.9163 20.6164C12.4137 20.6164 14.6902 19.6815 16.4368 18.153L18.3308 22.1194C18.3308 22.1194 18.7203 22.4367 19.2558 22.9637C19.804 23.4779 20.5251 24.1734 21.2164 24.9001L23.1401 26.872L23.9957 27.7871L27.0002 24.7826L26.0851 23.927C25.5483 23.4 24.8315 22.7002 24.1147 22.0004ZM9.9163 17.7833C6.01079 17.7833 2.8334 14.6059 2.8334 10.7004C2.8334 6.79485 6.01079 3.61746 9.9163 3.61746C13.8218 3.61746 16.9992 6.79485 16.9992 10.7004C16.9992 14.6059 13.8218 17.7833 9.9163 17.7833Z" fill="#F5FCFA"/>
+                  </svg>
+               </li>
+               <li class="header-menu__list">
+                  <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M21.544 1.6509C22.3502 1.98466 23.0827 2.47401 23.6997 3.091L24.0582 3.44947C25.3018 4.69593 26.0002 6.38478 26.0002 8.14551C26.0002 9.90625 25.3018 11.5951 24.0582 12.8416L14.5306 22.3693L13.5294 23.4256L13.5018 23.398L13.4763 23.4235L12.4077 22.3039L2.9454 12.8417C1.69994 11.5962 1.00024 9.90702 1.00024 8.14567C1.00024 6.38431 1.69994 4.6951 2.9454 3.44963L3.30392 3.09111C3.92062 2.47441 4.65274 1.98522 5.4585 1.65146C6.26425 1.3177 7.12785 1.14592 7.99999 1.14592C8.87213 1.14592 9.73573 1.3177 10.5415 1.65146C11.3472 1.98522 12.0794 2.47441 12.6961 3.09111L12.7012 3.0963L13.4993 3.90912L14.3041 3.09453C14.9206 2.47708 15.6528 1.98717 16.4587 1.65281C17.2647 1.31844 18.1286 1.14617 19.0012 1.14584C19.8737 1.14552 20.7378 1.31714 21.544 1.6509Z" fill="#F5FCFA"/>
+                     <path d="M23.6997 3.091L23.5229 3.26778L23.523 3.26779L23.6997 3.091ZM21.544 1.6509L21.6396 1.41991L21.544 1.6509ZM24.0582 3.44947L24.2352 3.2729L24.235 3.27268L24.0582 3.44947ZM24.0582 12.8416L24.235 13.0183L24.2352 13.0181L24.0582 12.8416ZM14.5306 22.3693L14.3537 22.1925L14.3491 22.1973L14.5306 22.3693ZM13.5294 23.4256L13.3526 23.6024L13.5342 23.784L13.7109 23.5976L13.5294 23.4256ZM13.5018 23.398L13.6785 23.2212L13.5016 23.0442L13.3248 23.2214L13.5018 23.398ZM13.4763 23.4235L13.2954 23.5961L13.4723 23.7814L13.6532 23.6001L13.4763 23.4235ZM12.4077 22.3039L12.5886 22.1313L12.5845 22.1272L12.4077 22.3039ZM2.9454 12.8417L2.76863 13.0185L2.76863 13.0185L2.9454 12.8417ZM2.9454 3.44963L2.76863 3.27285L2.76863 3.27285L2.9454 3.44963ZM3.30392 3.09111L3.4807 3.26788L3.4807 3.26788L3.30392 3.09111ZM5.4585 1.65146L5.36282 1.42049V1.42049L5.4585 1.65146ZM10.5415 1.65146L10.6372 1.42049V1.42049L10.5415 1.65146ZM12.6961 3.09111L12.8728 2.91434L12.8728 2.91433L12.6961 3.09111ZM12.7012 3.0963L12.8796 2.92114L12.878 2.91952L12.7012 3.0963ZM13.4993 3.90912L13.3209 4.08427L13.4988 4.26539L13.6772 4.08482L13.4993 3.90912ZM14.3041 3.09453L14.1272 2.91788L14.1263 2.91883L14.3041 3.09453ZM16.4587 1.65281L16.3629 1.42189V1.42189L16.4587 1.65281ZM19.0012 1.14584L19.0011 0.895844L19.0012 1.14584ZM23.8765 2.91423C23.2363 2.27401 22.4762 1.76623 21.6396 1.41991L21.4484 1.88189C22.2242 2.20308 22.9292 2.67402 23.5229 3.26778L23.8765 2.91423ZM24.235 3.27268L23.8765 2.91421L23.523 3.26779L23.8815 3.62626L24.235 3.27268ZM26.2502 8.14551C26.2502 6.31857 25.5256 4.56622 24.2352 3.2729L23.8813 3.62605C25.0781 4.82564 25.7502 6.45098 25.7502 8.14551H26.2502ZM24.2352 13.0181C25.5256 11.7248 26.2502 9.97245 26.2502 8.14551H25.7502C25.7502 9.84004 25.0781 11.4654 23.8813 12.665L24.2352 13.0181ZM14.7074 22.5461L24.235 13.0183L23.8815 12.6648L14.3538 22.1925L14.7074 22.5461ZM13.7109 23.5976L14.712 22.5413L14.3491 22.1973L13.348 23.2536L13.7109 23.5976ZM13.325 23.5747L13.3526 23.6024L13.7062 23.2488L13.6785 23.2212L13.325 23.5747ZM13.6532 23.6001L13.6787 23.5746L13.3248 23.2214L13.2993 23.2469L13.6532 23.6001ZM12.2269 22.4765L13.2954 23.5961L13.6571 23.2509L12.5886 22.1313L12.2269 22.4765ZM2.76863 13.0185L12.231 22.4807L12.5845 22.1272L3.12218 12.6649L2.76863 13.0185ZM0.750244 8.14567C0.750244 9.97333 1.47628 11.7261 2.76863 13.0185L3.12218 12.6649C1.9236 11.4663 1.25024 9.84072 1.25024 8.14567H0.750244ZM2.76863 3.27285C1.47628 4.56521 0.750244 6.31801 0.750244 8.14567H1.25024C1.25024 6.45062 1.9236 4.82499 3.12218 3.62641L2.76863 3.27285ZM3.12715 2.91433L2.76863 3.27285L3.12218 3.62641L3.4807 3.26788L3.12715 2.91433ZM5.36282 1.42049C4.52674 1.76681 3.76706 2.27442 3.12715 2.91433L3.4807 3.26788C4.07418 2.6744 4.77875 2.20362 5.55417 1.88243L5.36282 1.42049ZM7.99999 0.895923C7.09502 0.895923 6.19891 1.07417 5.36282 1.42049L5.55417 1.88243C6.32959 1.56124 7.16068 1.39592 7.99999 1.39592V0.895923ZM10.6372 1.42049C9.80107 1.07417 8.90496 0.895923 7.99999 0.895923V1.39592C8.8393 1.39592 9.67039 1.56124 10.4458 1.88243L10.6372 1.42049ZM12.8728 2.91433C12.2329 2.27442 11.4732 1.76681 10.6372 1.42049L10.4458 1.88243C11.2212 2.20362 11.9258 2.6744 12.5193 3.26788L12.8728 2.91433ZM12.878 2.91952L12.8728 2.91434L12.5193 3.26788L12.5245 3.27307L12.878 2.91952ZM13.6777 3.73397L12.8796 2.92114L12.5229 3.27145L13.3209 4.08427L13.6777 3.73397ZM14.1263 2.91883L13.3215 3.73341L13.6772 4.08482L14.482 3.27023L14.1263 2.91883ZM16.3629 1.42189C15.5267 1.76884 14.7669 2.27719 14.1272 2.91789L14.481 3.27118C15.0743 2.67697 15.7789 2.2055 16.5545 1.88372L16.3629 1.42189ZM19.0011 0.895844C18.0957 0.896184 17.1992 1.07494 16.3629 1.42189L16.5545 1.88372C17.3302 1.56194 18.1616 1.39616 19.0013 1.39584L19.0011 0.895844ZM21.6396 1.41991C20.8031 1.07359 19.9065 0.895504 19.0011 0.895844L19.0013 1.39584C19.841 1.39553 20.6725 1.56069 21.4484 1.88189L21.6396 1.41991Z" fill="#F5FCFA"/>
+                  </svg>
+               </li>
+               <li class="header-menu__list bell">
+                  <div class="bell__icon"><span class="bell__number">2</span></div>
+                  <div class="bell__list-wrap">
+                     <svg class="header__svg-list" width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.6341 1.17105C11.019 0.504384 11.9812 0.504384 12.3661 1.17105L22.3254 18.4211H0.674805L10.6341 1.17105Z" fill="#FFFFF"/>
+                     </svg>
+                     <ul class="bell__list">
+                        <li class="bell__list-item">nomeNotifica</li>
+                        <li class="bell__list-item">nomeNotifica</li>
+                        <li class="bell__list-item">nomeNotifica</li>
+                     </ul>
+                  </div>
+                  
+                  <svg width="45" height="49" viewBox="0 0 45 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M22.5002 10C22.0008 10.0004 21.5064 10.0991 21.0452 10.2904C20.584 10.4818 20.1652 10.762 19.8127 11.115C19.4601 11.468 19.1808 11.8869 18.9907 12.3478C18.8005 12.8087 18.7033 13.3024 18.7046 13.8008V14.3906C16.8762 15.1608 15.3164 16.4526 14.2206 18.1039C13.1248 19.7552 12.5419 21.6925 12.545 23.673V28.2012C11.732 28.4301 11.0297 28.9452 10.5681 29.6512C10.1064 30.3571 9.91676 31.2061 10.0341 32.0408C10.1515 32.8756 10.568 33.6397 11.2065 34.1916C11.845 34.7435 12.6623 35.0458 13.507 35.0426H17.9724C18.2172 36.0477 18.7929 36.9417 19.6073 37.5815C20.4217 38.2213 21.4276 38.5699 22.4641 38.5714H22.5364C23.5728 38.5699 24.5788 38.2213 25.3932 37.5815C26.2076 36.9417 26.7833 36.0477 27.0281 35.0426H31.4935C32.3382 35.0458 33.1554 34.7435 33.7939 34.1916C34.4325 33.6397 34.849 32.8756 34.9663 32.0408C35.0837 31.2061 34.894 30.3571 34.4324 29.6512C33.9708 28.9452 33.2685 28.4301 32.4555 28.2012V23.673C32.4585 21.6925 31.8756 19.7552 30.7799 18.1039C29.6841 16.4526 28.1243 15.1608 26.2959 14.3906V13.8008C26.2971 13.3024 26.2 12.8087 26.0098 12.3478C25.8197 11.8869 25.5404 11.468 25.1878 11.115C24.8353 10.762 24.4165 10.4818 23.9553 10.2904C23.4941 10.0991 22.9997 10.0004 22.5002 10ZM20.6747 13.8008C20.6946 13.3314 20.8955 12.8879 21.2354 12.5628C21.5753 12.2378 22.0278 12.0563 22.4986 12.0563C22.9694 12.0563 23.4219 12.2378 23.7618 12.5628C24.1017 12.8879 24.3026 13.3314 24.3225 13.8008C23.1174 13.5716 21.8798 13.5716 20.6747 13.8008ZM33.0071 31.5531C33.0071 31.7532 32.9676 31.9513 32.8909 32.1361C32.8142 32.321 32.7017 32.4889 32.5599 32.6304C32.4182 32.7719 32.2499 32.8841 32.0646 32.9607C31.8794 33.0373 31.6808 33.0767 31.4803 33.0767H13.507C13.1021 33.0767 12.7137 32.9162 12.4274 32.6304C12.1411 32.3447 11.9802 31.9572 11.9802 31.5531C11.9802 31.149 12.1411 30.7615 12.4274 30.4757C12.7137 30.19 13.1021 30.0295 13.507 30.0295H31.4935C31.8959 30.0338 32.2803 30.1961 32.5636 30.4813C32.8469 30.7665 33.0063 31.1515 33.0071 31.5531ZM30.4723 23.6894V28.08H14.515V23.673C14.515 22.6266 14.7216 21.5904 15.1229 20.6236C15.5242 19.6568 16.1123 18.7783 16.8538 18.0384C17.5953 17.2984 18.4756 16.7115 19.4444 16.311C20.4132 15.9106 21.4516 15.7045 22.5002 15.7045C23.5489 15.7045 24.5872 15.9106 25.5561 16.311C26.5249 16.7115 27.4052 17.2984 28.1467 18.0384C28.8881 18.7783 29.4763 19.6568 29.8776 20.6236C30.2789 21.5904 30.4855 22.6266 30.4855 23.673L30.4723 23.6894Z" fill="#F5FCFA"/>
+                  </svg>
+               </li>
+               <li class="header-menu__list header-menu__list-profile-icon"><div class="profile-icon"><img src="assets/image/icon-profile.png" alt=""></div></li>
+            </ul>
+         </div>
+       </header>
+       <section class="banner">
+          <div class="container">
+             <div class="banner__content-wrap">
+               <h1 class="main-title">Salute <br> & Felicità</h1>
+               <p class="banner__p">Un corso per chi non ha mai praticato o chi desidera ricominciare da zero.</p>
+               <div class="banner__btn-wrap">
+                  <button class="btn-main btn-basic"><img src="assets/svg/Vector-btn.svg" alt="">Esplora il Corso</button>
+                  <button class="btn-ligth btn-basic"><img src="assets/svg/heart2.svg" alt="">Aggiungi ai Preferiti</button>
+               </div>
+             </div>
+         </div>
+         <div class="banner__files"><span class="banner__files-number">12</span>pratiche            
+         </div>
+       </section>
+       <section class="courses">
+          <div class="container">
+            <p class="courses__title">I nostri Corsi</p>
+         </div>
+            <div class="courses__wrap-block">
+               <div class="container courses__wrap">
+               <div class="courses-card">
+                  <div class="banner__files"><span class="banner__files-number">12</span></div> 
+                  <div class="courses-card__like">
+                  </div>        
+                  <div class="courses-card__progress-bar">
+                     <div class="courses-card__progress-bar-item" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--value:97"></div>                  </div>
+                  <p class="courses-card__title">Corso <br> Principianti </p>
+               </div>
+               <div class="courses-card">
+                  <div class="banner__files"><span class="banner__files-number">12</span></div> 
+                  <div class="courses-card__like courses-card__like_cheked">
+                  </div>        
+                  <div class="courses-card__progress-bar">
+                     <div class="courses-card__progress-bar-item" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--value:97"></div>                  </div>
+                  <p class="courses-card__title">Corso <br> Principianti </p>
+               </div>
+               <div class="courses-card">
+                  <div class="banner__files"><span class="banner__files-number">12</span></div> 
+                  <div class="courses-card__like">
+                  </div>        
+                  <div class="courses-card__progress-bar">
+                     <div class="courses-card__progress-bar-item" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--value:97"></div>                  </div>
+                  <p class="courses-card__title">Corso <br> Principianti </p>
+               </div>
+               <div class="courses-card">
+                  <div class="banner__files"><span class="banner__files-number">12</span></div> 
+                  <div class="courses-card__like">
+                  </div>        
+                  <div class="courses-card__progress-bar">
+                     <div class="courses-card__progress-bar-item" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--value:97"></div>                  </div>
+                  <p class="courses-card__title">Corso <br> Principianti </p>
+               </div>
+               <div class="courses-card">
+                  <div class="banner__files"><span class="banner__files-number">12</span></div> 
+                  <div class="courses-card__like">
+                  </div>        
+                  <div class="courses-card__progress-bar">
+                     <div class="courses-card__progress-bar-item" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--value:97"></div>                  </div>
+                  <p class="courses-card__title">Corso <br> Principianti </p>
+               </div>
+               <div class="courses-card">
+                  <div class="banner__files"><span class="banner__files-number">12</span></div> 
+                  <div class="courses-card__like">
+                  </div>        
+                  <div class="courses-card__progress-bar">
+                     <div class="courses-card__progress-bar-item" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--value:97"></div>                  </div>
+                  <p class="courses-card__title">Corso <br> Principianti </p>
+               </div>
+               <div class="courses-card">
+                  <div class="banner__files"><span class="banner__files-number">12</span></div> 
+                  <div class="courses-card__like">
+                  </div>        
+                  <div class="courses-card__progress-bar">
+                     <div class="courses-card__progress-bar-item" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--value:97"></div>                  </div>
+                  <p class="courses-card__title">Corso <br> Principianti </p>
+               </div>
+               <div class="courses-card">
+                  <div class="banner__files"><span class="banner__files-number">12</span></div> 
+                  <div class="courses-card__like">
+                  </div>        
+                  <div class="courses-card__progress-bar">
+                     <div class="courses-card__progress-bar-item" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--value:97"></div>                  </div>
+                  <p class="courses-card__title">Corso <br> Principianti </p>
+               </div>
+               <div class="courses-card">
+                  <div class="banner__files"><span class="banner__files-number">12</span></div> 
+                  <div class="courses-card__like">
+                  </div>        
+                  <div class="courses-card__progress-bar">
+                     <div class="courses-card__progress-bar-item" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--value:97"></div>                  </div>
+                  <p class="courses-card__title">Corso <br> Principianti </p>
+               </div>
+               <div class="courses-card">
+                  <div class="banner__files"><span class="banner__files-number">12</span></div> 
+                  <div class="courses-card__like">
+                  </div>        
+                  <div class="courses-card__progress-bar">
+                     <div class="courses-card__progress-bar-item" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--value:97"></div>                  </div>
+                  <p class="courses-card__title">Corso <br> Principianti </p>
+               </div>
+               <div class="courses-card">
+                  <div class="banner__files"><span class="banner__files-number">12</span></div> 
+                  <div class="courses-card__like courses-card__like_cheked">
+                  </div>        
+                  <div class="courses-card__progress-bar">
+                     <div class="courses-card__progress-bar-item" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--value:97"></div>                  </div>
+                  <p class="courses-card__title">Corso <br> Principianti </p>
+               </div>
+               <div class="courses-card">
+                  <div class="banner__files"><span class="banner__files-number">12</span></div> 
+                  <div class="courses-card__like courses-card__like_cheked">
+                  </div>        
+                  <div class="courses-card__progress-bar">
+                     <div class="courses-card__progress-bar-item" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--value:97"></div>                  </div>
+                  <p class="courses-card__title">Corso <br> Principianti </p>
+               </div>
+            </div>
+            </div>
+          </div>
+       </section>
+       <section class="course-pop-up">
+        <div class="course-pop-up__cross"></div>
+        <div class="banner">
+            <h1 class="main-title">Salute <br> & Felicità</h1>
+            <div class="banner__btn-wrap">
+                <button class="btn-ligth btn-basic"><img src="assets/svg/icon-play-btn.svg" alt="">Riproduci</button>
+                <div class="btn-like btn-basic"></div>
+                </div>
+                <div class="course-pop-up__descriptions">
+                <div>
+                    <p class="course-pop-up__descriptions-weight-text course-pop-up__descriptions-text">Un corso per chi non ha mai praticato o chi desidera ricominciare da zero.</p>
+                    <p class="course-pop-up__descriptions-text">Ti consiglio di concentrarti su questo corso per almeno <span class="course-pop-up__descriptions-weight-text">un mese</span> e ripetere più volte le varie pratiche.</p>
+                </div>
+                <div> 
+                    <p class="course-pop-up__descriptions-text">Nome Coach: <span class="course-pop-up__descriptions-weight-text">Raphael Fulpeople</span></p>
+                    <p class="course-pop-up__descriptions-text">Specialità: <span class="course-pop-up__descriptions-weight-text">Yoga e meditazione</span></p>
+                </div>
+                
+            </div>
+            <h2 class="course-pop-up__list-title">Le pratiche</h2>
+                <div class="course-pop-up__list-wrap">
+                    <div class="course-list-item">
+                        <p class="course-list-item__number">01</p>
+                        <div class="course-list-item__video"><img src="assets/image/pop-up-banner2.jpeg" alt="">
+                        <div class="course-list-item__btn-play"><img src="assets/image/btn-play.png" alt=""></div></div>
+                        <div class="course-list-item__descriptions"> 
+                            <p class="course-list-item__descriptions-title">Primi movimenti</p>
+                            <div class="course-list-item__info">
+                                <div>
+                                    <img src="assets/svg/level.svg" alt="">
+                                    <span>Livello <span>1</span></span>
+                                </div>
+                                <div>
+                                    <img src="assets/svg/time.svg" alt="">
+                                    <span>00:18</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list-item__icon-wrap">
+                            <div><img src="assets/svg/info.svg" alt=""></div>
+                            <div><img src="assets/svg/heart-course-card.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="course-list-item">
+                        <p class="course-list-item__number">02</p>
+                        <div class="course-list-item__video"><img src="assets/image/pop-up-banner2.jpeg" alt="">
+                        <div class="course-list-item__btn-play"><img src="assets/image/btn-play.png" alt=""></div></div>
+                        <div class="course-list-item__descriptions"> 
+                            <p class="course-list-item__descriptions-title">Primi movimenti</p>
+                            <div class="course-list-item__info">
+                                <div>
+                                    <img src="assets/svg/level.svg" alt="">
+                                    <span>Livello <span>1</span></span>
+                                </div>
+                                <div>
+                                    <img src="assets/svg/time.svg" alt="">
+                                    <span>00:18</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list-item__icon-wrap">
+                            <div><img src="assets/svg/info.svg" alt=""></div>
+                            <div><img src="assets/svg/heart-course-card.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="course-list-item">
+                        <p class="course-list-item__number">03</p>
+                        <div class="course-list-item__video"><img src="assets/image/pop-up-banner2.jpeg" alt="">
+                        <div class="course-list-item__btn-play"><img src="assets/image/btn-play.png" alt=""></div></div>
+                        <div class="course-list-item__descriptions"> 
+                            <p class="course-list-item__descriptions-title">Primi movimenti</p>
+                            <div class="course-list-item__info">
+                                <div>
+                                    <img src="assets/svg/level.svg" alt="">
+                                    <span>Livello <span>1</span></span>
+                                </div>
+                                <div>
+                                    <img src="assets/svg/time.svg" alt="">
+                                    <span>00:18</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list-item__icon-wrap">
+                            <div><img src="assets/svg/info.svg" alt=""></div>
+                            <div><img src="assets/svg/heart-course-card.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="course-list-item">
+                        <p class="course-list-item__number">04</p>
+                        <div class="course-list-item__video"><img src="assets/image/pop-up-banner2.jpeg" alt="">
+                        <div class="course-list-item__btn-play"><img src="assets/image/btn-play.png" alt=""></div></div>
+                        <div class="course-list-item__descriptions"> 
+                            <p class="course-list-item__descriptions-title">Primi movimenti</p>
+                            <div class="course-list-item__info">
+                                <div>
+                                    <img src="assets/svg/level.svg" alt="">
+                                    <span>Livello <span>1</span></span>
+                                </div>
+                                <div>
+                                    <img src="assets/svg/time.svg" alt="">
+                                    <span>00:18</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list-item__icon-wrap">
+                            <div><img src="assets/svg/info.svg" alt=""></div>
+                            <div><img src="assets/svg/heart-course-card.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="course-list-item">
+                        <p class="course-list-item__number">05</p>
+                        <div class="course-list-item__video"><img src="assets/image/pop-up-banner2.jpeg" alt="">
+                        <div class="course-list-item__btn-play"><img src="assets/image/btn-play.png" alt=""></div></div>
+                        <div class="course-list-item__descriptions"> 
+                            <p class="course-list-item__descriptions-title">Primi movimenti</p>
+                            <div class="course-list-item__info">
+                                <div>
+                                    <img src="assets/svg/level.svg" alt="">
+                                    <span>Livello <span>1</span></span>
+                                </div>
+                                <div>
+                                    <img src="assets/svg/time.svg" alt="">
+                                    <span>00:18</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list-item__icon-wrap">
+                            <div><img src="assets/svg/info.svg" alt=""></div>
+                            <div><img src="assets/svg/heart-course-card.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="course-list-item">
+                        <p class="course-list-item__number">06</p>
+                        <div class="course-list-item__video"><img src="assets/image/pop-up-banner2.jpeg" alt="">
+                        <div class="course-list-item__btn-play"><img src="assets/image/btn-play.png" alt=""></div></div>
+                        <div class="course-list-item__descriptions"> 
+                            <p class="course-list-item__descriptions-title">Primi movimenti</p>
+                            <div class="course-list-item__info">
+                                <div>
+                                    <img src="assets/svg/level.svg" alt="">
+                                    <span>Livello <span>1</span></span>
+                                </div>
+                                <div>
+                                    <img src="assets/svg/time.svg" alt="">
+                                    <span>00:18</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list-item__icon-wrap">
+                            <div><img src="assets/svg/info.svg" alt=""></div>
+                            <div><img src="assets/svg/heart-course-card.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+       </section>
+   </body>
+</html>
