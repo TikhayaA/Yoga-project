@@ -1,0 +1,45 @@
+.email{
+    height: calc(100vh - 106px);
+    display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    &__wrap{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    &__title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 42.6407px;
+        line-height: 52px;
+        color: $darkforest1;
+        margin: 35px 0 55px;
+    }
+    &__btn{
+        padding: 24px 40px;
+        background: $darkforest2;
+        color: $bali5;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: -0.005em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &__btn-weigth-text{
+        font-weight: 600;
+        padding-left: 5px;
+    }
+}

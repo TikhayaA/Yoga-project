@@ -9,8 +9,8 @@
       <link href="assets/style/css/reset.css" rel="stylesheet"> 
       <link href="assets/style/css/style.css" rel="stylesheet">
    </head>
-   <body>
-       <header class="header account">
+   <body class="account">
+       <header class="header ">
           <div class="container header__wrap">
             <div class="header__logo"><img src="assets/svg/logo-header.svg" alt=""></div>
             <ul class="header__menu header-menu">
@@ -24,11 +24,40 @@
                 <h1 class="account__title">Account</h1>
                 <p class="account__title-descriptions"><img src="assets/svg/abonato.svg" alt=""> Abbonato da settembre 2021</p>
             </div>
-        </div>
-        <div class="subscription">
-            <div class="subscription__btn-wrap">
-                <p class="subscription__btn-title">Abbonamento e fatturazione</p>
-                <button class="subscription__btn btn-basic">Disdici abbonamento</button>
+            <div class="subscription">
+                <div class="subscription__btn-wrap">
+                    <p class="subscription__btn-title">Abbonamento e fatturazione</p>
+                    <button class="subscription__btn btn-basic">Disdici abbonamento</button>
+                </div>
+                <div class="subscription__main-container">
+                    <div class="subscription__container-block">
+                        <div class="subscription__info-user">
+                            <div class="subscription__field-mail subscription__field">emailDiProva@gmail.com</div>
+                            <a href="#" class="subscription__field-btn">Modifica email account</a>
+                        </div>
+                        <div class="subscription__info-user">
+                            <div class="subscription__field-second subscription__field">Password:<span class="subscription__field-password">*********</span></div>
+                            <a href="#" class="subscription__field-btn">Modifica password</a>
+                        </div>
+                    </div>
+                    <div class="subscription__container-block subscription__second-block">
+                        <div>
+                            <div class="subscription__info-card">
+                                <div class="subscription__field-mail subscription__field"><img src="assets/svg/fa-solid_money-check.svg" alt=""> ••••  ••••  •••• 3456</div>
+                                <p class="subscription__field subscription__field-billing">La prissima data di fatturazione è : <span class="subscription__field-date">18 novembre 2021</span>.</p>
+                            </div>
+                            <div class="subscription__btn btn-basic subscription__btn_sun">Rinnova abbonamento</div>
+                        </div>
+                        <div class="subscription__wrap-link">
+                            <a href="#" class="subscription__field-btn">Modifica metodo di pagamento</a>
+                            <a href="#" class="subscription__field-btn">Aggiungi metodo di pagamento
+                                di riserva</a>
+                            <a href="#" class="subscription__field-btn">Visualizza le ultime transazioni</a>
+                        </div>
+                    </div>
+                    <a href="#" class="subscription__field-btn sign-out">Esci da questo Account</a>
+
+                </div>
             </div>
         </div>
        </main>

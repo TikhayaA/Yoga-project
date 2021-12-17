@@ -1,4 +1,6 @@
 .account{
+    background: $darkforest4;
+    color: $darkforest2;
     .profile-icon{
         width: 60px;
         height: 60px;
@@ -12,9 +14,9 @@
             width: 100%;
         }
     }
-    &__main{
-        background: $darkforest4;
-        color: $darkforest2;
+    .header{
+        height: 106px;
+        line-height: 106px;
     }
     &__container{
         width: 1163px;
@@ -22,6 +24,17 @@
     }
     &__title-wrap{
         display: flex;
+        padding: 40px 0 30px;
+        position: relative;
+        &:after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background: $darkforest2;
+            bottom: 0px;
+            left: 0;
+        }
     }
     &__title{
         font-style: normal;
@@ -29,6 +42,7 @@
         font-size: 42.6407px;
         line-height: 52px;
         margin-right: 42px;
+        color: $darkforest1;
     }
     &__title-descriptions{
         font-style: normal;
@@ -36,11 +50,7 @@
         font-size: 13.5px;
         line-height: 52px;
         img{
-            margin-right: 10px;
+            margin-right: 3px;
         }
     }
-}
-.account.header{
-    height: 106px;
-    line-height: 106px;
 }

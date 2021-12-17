@@ -32,7 +32,7 @@
         cursor: pointer;
         &:after{
             position: absolute;
-            content: url("../../svg/heart-course-card.svg");
+            content: url("../../svg/like20px.svg");
             transform: translate(0, -50%);
             top: 50%;
         }
@@ -40,10 +40,13 @@
     }
     .main-title{
         font-size: 34px;
+        line-height: 41px;
     }
     .banner{
+        background: linear-gradient(180deg, #36706A 0%, rgba(54, 112, 106, 0.35) 18.57%, rgba(54, 112, 106, 0.247849) 60.41%, rgba(54, 112, 106, 0.553075) 79.77%, #36706A 100%), linear-gradient(0deg, rgba(38, 79, 75, 0.8), rgba(38, 79, 75, 0.8)), url('../../image/baner-home.jpeg');
+        background-size: cover;
         height: 514px;
-        padding: 320px 20px 20px;
+        padding: 362px 20px 20px;
         box-sizing: border-box;
     }
     .banner__btn-wrap {
@@ -53,6 +56,10 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 40px;
+        padding: 12px 20px 0;
+        background: $darkforest2;
+        margin-top: -1px;
+        position: relative;
         >:nth-child(1){
             width: 51%;
         }
@@ -73,6 +80,36 @@
     &__list-title{
         font-size: 28px;
         line-height: 42px;
-        margin-bottom: 40px;
+        margin-bottom: 18px;
+        padding: 0 20px;
+    }
+    .courses-card__progress-bar{
+        position: absolute;
+        right: 16px;
+        bottom: 69px;
+        width: 80px;
+        height: 80px;
+        div[role="progressbar"] {
+            display: grid;
+            place-items: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            color: #264F4B;
+          }
+          div[role="progressbar"]::before {
+            counter-reset: percentage var(--value);
+            content: counter(percentage) '%';
+          }
+    }
+    .courses-card__progress-bar-item{
+        width: 64px;
+        height: 64px;
+    }
+}
+.pratiche{
+    .banner{
+        background: linear-gradient(180deg, #36706A 0%, rgba(54, 112, 106, 0.35) 18.57%, rgba(54, 112, 106, 0.247849) 60.41%, rgba(54, 112, 106, 0.553075) 79.77%, #36706A 100%), linear-gradient(0deg, rgba(38, 79, 75, 0.8), rgba(38, 79, 75, 0.8)), url('../../image/pop-up-banner2.jpeg');
+        background-size: cover;
+       
     }
 }
