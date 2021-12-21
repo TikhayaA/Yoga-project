@@ -36,11 +36,11 @@
         background: #FFFFFF;
         position: relative;
         cursor: pointer;
-        transition: all 1s;
-        -webkit-transition: all 1s;
-        -moz-transition: all 1s;
-        -ms-transition: all 1s;
-        -o-transition: all 1s;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
         &:hover{
             background: $darkforest1;
             .prices__title,  .prices__list-item, .prices__cancell, .prices__prise{
@@ -108,7 +108,7 @@
                 -moz-border-radius: 50%;
                 -ms-border-radius: 50%;
                 -o-border-radius: 50%;
-}
+            }
             &_disabled{
                 color: rgba(38, 79, 75, 0.5);
             }
@@ -173,6 +173,15 @@
             color: #264F4B;
             box-sizing: border-box;
             padding: 0 20px;
+            border: 1px solid transparent;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            &:hover{
+                border: 1px solid $darkforest3;
+            }
         }
         &__number{
             margin-bottom: 23px;
@@ -228,17 +237,22 @@
         }
     }
     .btn-basic{
-        font-style: normal;
-        font-weight: 600;
         font-size: 15px;
         line-height: 20px;
         letter-spacing: -0.005em;
     }
-    .authorization-checkbox__item .authorization-checkbox__label{
+    .checkbox__item .checkbox__label{
         color: $darkforest1;
-        position: relative;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: -0.08px;
     }
-    .authorization-checkbox__item p{
+    .checkbox .checkbox__custom + label::before{
+        width: 20px;
+        height: 20px;
+    }
+    .checkbox__item p{
         font-style: normal;
         font-weight: normal;
         font-size: 11px;

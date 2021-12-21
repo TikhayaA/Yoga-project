@@ -2,7 +2,6 @@
     background: linear-gradient(180deg, rgba(38, 79, 75, 0.2) 0%, rgba(38, 79, 75, 0.1) 18.57%, rgba(38, 79, 75, 0.247849) 60.41%, rgba(38, 79, 75, 0.553075) 79.77%, #264F4B 100%), linear-gradient(0deg, rgba(38, 79, 75, 0.8), rgba(38, 79, 75, 0.8)), url("../../image/courses-card1.jpeg");
     background-blend-mode: normal, lighten, normal;
     background-size: cover;
-    background-blend-mode: normal, lighten, normal;
     background-position: center;
     border-radius: 2px;
     width: 453px;
@@ -14,20 +13,25 @@
     justify-content: space-between;
     box-sizing: border-box;
     margin-bottom: 20px;
-    cursor: pointer;
-    &__like{
-        position: absolute;
-        bottom: 50px;
-        right: 52px;
-        &:after{
-            position: absolute;
-            content: url("../../svg/heart-course-card.svg");
-        }
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    @media screen and (max-width: 1420px){
+        width: calc(33% - 10px);
     }
-    .courses-card__like.courses-card__like_cheked{
-        &:after{
-            content: url("../../svg/like-cheked.svg");
-        }
+    @media screen and (max-width: 767px){
+        width: 155px;
+        margin-right: 15px;
+        padding: 10px 5px 10px;
+    }
+    
+    &:hover{
+        background: linear-gradient(180deg, rgba(38, 79, 75, 0.5) 0%, #264F4B 100%), linear-gradient(0deg, rgba(38, 79, 75, 0.8), rgba(38, 79, 75, 0.8)), url("../../image/courses-card1.jpeg");
+        background-blend-mode: normal, lighten, normal;
+        background-size: cover;
+        background-position: center;
     }
     &__progress-bar{
         display: flex;
@@ -45,7 +49,6 @@
             0%, 33% { --pgPercentage: 0; }
             100% { --pgPercentage: var(--value); }
           }
-          
           @property --pgPercentage {
             syntax: '<number>';
             inherits: false;
@@ -77,5 +80,52 @@
         font-size: 34px;
         line-height: 41px;
         letter-spacing: 0.37px;
+        cursor: pointer;
+        @media screen and (max-width: 1420px){
+            font-size: 24px;
+            line-height: 32px;
+        }
+        @media screen and (max-width: 1000px){
+            font-size: 20px;
+            line-height: 26px;
+        }
+        @media screen and (max-width: 767px){
+            line-height: 24px;
+        }
+    }
+    .banner__files{
+        @media screen and (max-width: 767px){
+            display: none;
+        }
+    }
+    .banner__files-number{
+        &:after{
+            content: url("../../svg/copy.svg");
+            left: -21px;
+            top: 1px;
+        }  
+    }
+    .like-big{
+        @media screen and (max-width: 767px){
+            display: none;
+        }
+    }
+}
+.like-big{
+    position: absolute;
+    bottom: 19px;
+    right: 15px;
+    width: 33px;
+    height: 28px;
+    &:after{
+        position: absolute;
+        content: url("../../svg/heart-course-card.svg");
+        top: 0;
+        left: 0;
+    }
+}
+.like-big_cheked{
+    &:after{
+        content: url("../../svg/like-cheked.svg");
     }
 }

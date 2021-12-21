@@ -6,26 +6,50 @@
     background-blend-mode: normal, lighten, normal;
     background-position: center;
     position: relative;
-    
+    @media screen and (max-width: 767px){
+        height: 468px;
+        top: -68px;
+    }
     &__p{
         font-style: normal;
         font-weight: 600;
         font-size: 18px;
         line-height: 29px;
         width: 40%;
+        @media screen and (max-width: 767px){
+            font-size: 13px;
+            line-height: 20px;
+            width: 80%;
+            color: $bali;
+        }
     }
     &__btn-wrap{
         display: flex;
         margin: 10px 0 162px;
+        @media screen and (max-width: 767px){
+            margin: 28px 0 162px;
+        }
+    }
+    .btn-like{
+        @media screen and (max-width: 767px){
+            display: none;
+        }
     }
     &__content-wrap{
         padding-top: 280px;
+        @media screen and (max-width: 767px){
+            padding-top: 288px;
+        }
     }
     .btn-basic{
         width: 380px;
         padding: 9px 0;
         box-shadow: 0px 6px 12px -6px rgba(39, 79, 75, 0.25);
         margin-right: 20px;
+        @media screen and (max-width: 450px){
+            width: 100%;
+            margin-right: 0;
+        }
     }
     .btn-basic_ligth{
         padding: 10px 19px;
@@ -43,6 +67,9 @@
         position: absolute;
         left: 0;
         bottom: 23%;
+        @media screen and (max-width: 767px){
+            display: none;
+        }
     }
     &__files-number{
         margin-right: 5px;
@@ -61,4 +88,8 @@
     font-size: 56.8391px;
     line-height: 52px;
     margin-bottom: 10px;
+    @media screen and (max-width: 767px){
+        font-size: 34px;
+        line-height: 31px;
+    }
 }

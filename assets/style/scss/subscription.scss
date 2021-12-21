@@ -3,7 +3,11 @@
     margin-top: 21px;
     display: flex;
     justify-content:space-between;
-    
+    @media screen and (max-width: 980px){
+        width: 60%;
+        margin: auto;
+        flex-direction: column;
+    }
     &__btn-title{
         font-weight: 500;
         font-size: 18px;
@@ -17,6 +21,9 @@
     }
     &__main-container{
         width: 69.5%;
+        @media screen and (max-width: 980px){
+            width: 100%;
+        }
     }
     &__info-user{
         display: flex;
@@ -76,6 +83,9 @@
         align-items: flex-end;
         width: 38%;
         padding-top: 16px;
+        @media screen and (max-width: 1200px){
+            width: 44%;
+        }
     }
     &__second-block{
         display: flex;
@@ -93,5 +103,25 @@
         display: block;
         text-align: center;
         margin-top: 14px;
+    }
+    &__btn-wrap{
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        @media screen and (max-width: 1200px){
+            position: relative;
+            padding-bottom: 30px;
+        }
+        &:after{
+            @media screen and (max-width: 1200px){
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 2px;
+                background: $darkforest2;
+                bottom: 0px;
+                left: 0;
+            }
+        }
     }
 }

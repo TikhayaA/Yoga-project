@@ -1,11 +1,15 @@
 .course-pop-up{
-    width: 786px;
+    width: 783px;
     position: absolute;
     background: $darkforest2;
     z-index: 2;
     top: 26px;
     left: 50%;
     transform: translate(-50%, 0);
+    @media screen and (max-width: 800px){
+        width: 100%;
+        top: 108px;
+    }
     &__cross{
         width: 28px;
         height: 28px;
@@ -19,9 +23,36 @@
             content: url("../../svg/cross-pop-up.svg");
         }
     }
+    &__back-wrap{
+        display: flex;
+        position: absolute;
+        top: 50px;
+        left: 19px;
+        z-index: 1;
+        align-items: center;
+    }
+    &__back-btn{
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        z-index: 1;
+        &:after{
+            position: absolute;
+            content: url("../../svg/Subtract.svg");
+        }
+    }
+    &__back-title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.38px;
+        color: $darkforest1;
+        margin-left: 10px;
+    }
     .btn-basic_ligth{
         width: 365px;
-        padding: 0;
+        padding: 15px 10px;
         margin-right: 10px;
     }
     .btn-like{
@@ -42,12 +73,23 @@
         font-size: 34px;
         line-height: 41px;
     }
+    .main-title-p{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 24px;
+        letter-spacing: -0.41px;
+    }
     .banner{
         background: linear-gradient(180deg, #36706A 0%, rgba(54, 112, 106, 0.35) 18.57%, rgba(54, 112, 106, 0.247849) 60.41%, rgba(54, 112, 106, 0.553075) 79.77%, #36706A 100%), linear-gradient(0deg, rgba(38, 79, 75, 0.8), rgba(38, 79, 75, 0.8)), url('../../image/baner-home.jpeg');
         background-size: cover;
         height: 514px;
         padding: 362px 20px 20px;
         box-sizing: border-box;
+        background-position: center;
+        @media screen and (max-width: 740px){
+            height: 352px;
+        }
     }
     .banner__btn-wrap {
       margin-bottom: 10px;   
@@ -105,11 +147,98 @@
         width: 64px;
         height: 64px;
     }
+    .like-big{
+        position: relative;
+        bottom: auto;
+        right: auto;
+    }                   
+
 }
 .pratiche{
     .banner{
-        background: linear-gradient(180deg, #36706A 0%, rgba(54, 112, 106, 0.35) 18.57%, rgba(54, 112, 106, 0.247849) 60.41%, rgba(54, 112, 106, 0.553075) 79.77%, #36706A 100%), linear-gradient(0deg, rgba(38, 79, 75, 0.8), rgba(38, 79, 75, 0.8)), url('../../image/pop-up-banner2.jpeg');
+        background: linear-gradient(180deg, #59AFA7 0%, rgba(89, 175, 167, 0.35) 15.38%, rgba(89, 175, 167, 0.247849) 50.04%, rgba(89, 175, 167, 0.553075) 66.07%, #59AFA7 82.83%), url('../../image/pop-up-banner2.jpeg');
         background-size: cover;
-       
+        height: 533px;
+        padding: 413px 20px 20px;
+        .time-video-block{
+            margin-top: 3px;
+            position: relative;
+            z-index: 1;
+            span{
+                letter-spacing: -0.5px;
+                font-size: 15px;
+                line-height: 20px;
+            }
+            img{
+                width: 17px;
+            }
+        }
+    }
+    .course-pop-up{
+        background: $darkforest3;
+        &__descriptions{
+            background: $darkforest3;
+            margin-top: 45px;
+            >:nth-child(1){
+                flex-direction: column;
+                margin-right: 20px;
+            }
+            >:nth-child(2){
+                text-align: left;
+            } 
+        }
+        &__icon-meditation-group{
+            flex-direction: row;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            p{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+                margin-top: 11px;
+            }
+        }
+        &__icon-meditation-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__list-container{
+            margin-top: 100px;
+        }
+        .course-list-item_active{
+            background: rgba(189, 223, 220, 0.7);
+        }
+        .banner__btn-wrap{
+            margin-top: 10px;
+        }
+        .main-title-p{
+            position: relative;
+            z-index: 1;
+            letter-spacing: -0.005em;
+        }
+        .courses-card__progress-bar{
+            right: 9px;
+            bottom: 39px;
+        }
+    }
+    .course-list-item{
+        &:after{
+        background: $darkforest5;
+        }
+    }
+    .course-list-item{
+        &:hover{
+            background: $darkforest2;
+        }
+    }
+    
+}
+.time-video-block{
+    span{
+        font-size: 13px;
+        line-height: 18px;
     }
 }

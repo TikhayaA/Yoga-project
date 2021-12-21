@@ -2,6 +2,9 @@
     &__container{
         width: 1163px;
         margin: auto;
+        @media screen and (max-width: 1200px){
+            width: 90%;
+        }
     }
     &__title-wrap{
         display: flex;
@@ -15,15 +18,15 @@
             background: $darkforest2;
             bottom: 0px;
             left: 0;
+            @media screen and (max-width: 1200px){
+                display: none;
+            }
         }
-    }
-    &__title{
-        font-style: normal;
-        font-weight: 600;
-        font-size: 42.6407px;
-        line-height: 52px;
-        margin-right: 42px;
-        color: $darkforest1;
+        @media screen and (max-width: 980px){
+            width: 60%;
+            margin: auto;
+            justify-content: space-between;
+        }
     }
     &__title-descriptions{
         font-style: normal;

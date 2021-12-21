@@ -13,7 +13,6 @@ $sunsetBreath5:#FDFBF8;
 .body-main{
     background: $darkforest1;
     min-height: 100vh;
-    // overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +21,7 @@ $sunsetBreath5:#FDFBF8;
         height: 100%;
         width: 100%;
         overflow: unset;
+        align-items: baseline;
     }
 }
 body{
@@ -43,7 +43,9 @@ body{
 .container{
     max-width: 1400px;
     margin: auto;
-    
+    @media screen and (max-width: 1420px){
+        max-width: 95%;
+    }
 }
 .btn-basic{
     font-family: 'Poppins', sans-serif;
@@ -65,13 +67,13 @@ body{
     &_sun{
         background: $sun;
     }
-    &_middle{
-        background: $darkforest4;
-        color: $darkforest3;
-    }
     &_ligth{
         background: $bali5;
         color: #264F4B;
+    }
+    &_middle{
+        background: $darkforest4;
+        color: $darkforest3;
     }
 }
 .seetings{
@@ -98,5 +100,13 @@ body{
     .header{
         height: 106px;
         line-height: 106px;
+    }
+    &__title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 42.6407px;
+        line-height: 52px;
+        margin-right: 42px;
+        color: $darkforest1;
     }
 }

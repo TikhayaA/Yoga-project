@@ -11,11 +11,22 @@
     }
     &__list-profile-icon{
         margin-left: 52px;
+        @media screen and (max-width: 767px){
+            margin-left: 25px;
+        }
         &:after{
             position: absolute;
             content: url("../../svg/Vector-list.svg");
             top: 0;
             right: -16px;
+            @media screen and (max-width: 767px){
+                display: none;
+            }
+        }
+    }
+    :nth-child(2){
+        @media screen and (max-width: 767px){
+            display: none;
         }
     }
 }

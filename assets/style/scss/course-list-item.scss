@@ -1,9 +1,16 @@
 .course-list-item{
     display: flex;
-    padding: 20px 55px 20px 27px;
+    padding: 20px 43px 20px 27px;
     position: relative;
-    background: $darkforest2;
     cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    &:hover{
+        background: $darkforest1;
+    }
     &:after{
         position: absolute;
         content: "";
@@ -64,8 +71,7 @@
         }
         >div{
             margin-right: 20px;
-        }
-        span{
+            font-weight: normal;
             font-size: 13px;
             line-height: 18px;
         }
@@ -80,5 +86,12 @@
         >div{
             cursor: pointer;
         }
+    }
+    .time-video-block{
+        span{
+            font-size: 13px;
+            line-height: 18px;
+        }
+       
     }
 }
