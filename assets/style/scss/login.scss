@@ -29,7 +29,7 @@
     .authorization-form__wrap-block-step-next{
         margin-top: 24px;
     }
-    .authorization-form__btn{
+    .btn-basic{
         position: static;
         margin-top: 55px;
         @media screen and (min-width: 741px) and (max-width: 1150px){
@@ -40,11 +40,23 @@
         @media screen and (max-width: 740px){
             display: none;
         }
-    }
+    } 
     .authorization-form__label-mail,.authorization-form__label-password{
         display: none;
         @media screen and (max-width: 740px){
             display: block;
         }
     }
+    .authorization-form__input{
+        &::placeholder{
+            color: transparent;
+            @media screen and (max-width: 740px){
+                color: $bali;
+            }
+        }
+    }
+}
+
+.authorization__recovery-password .authorization-form__label-mail{
+    display: block;
 }

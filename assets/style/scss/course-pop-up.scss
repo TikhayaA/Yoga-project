@@ -19,17 +19,17 @@
             content: url("../../svg/cross-pop-up.svg");
         }
     }
-    .btn-ligth{
+    .btn-basic_ligth{
         width: 365px;
-        padding: 17px 0 16px;
+        padding: 0;
         margin-right: 10px;
     }
     .btn-like{
-        background: $darkforest3;
         width: 50px;
         height: 50px;
         position: relative;
         cursor: pointer;
+        box-sizing: border-box;
         &:after{
             position: absolute;
             content: url("../../svg/like20px.svg");

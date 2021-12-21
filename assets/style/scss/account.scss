@@ -1,23 +1,4 @@
 .account{
-    background: $darkforest4;
-    color: $darkforest2;
-    .profile-icon{
-        width: 60px;
-        height: 60px;
-        img{
-            width: 60px;
-        }
-    }
-    .header__logo{
-        width: 182px;
-        img{
-            width: 100%;
-        }
-    }
-    .header{
-        height: 106px;
-        line-height: 106px;
-    }
     &__container{
         width: 1163px;
         margin: auto;

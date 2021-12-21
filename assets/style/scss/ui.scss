@@ -12,8 +12,8 @@ $sunsetBreath4:#FAF6F1;
 $sunsetBreath5:#FDFBF8;
 .body-main{
     background: $darkforest1;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    // overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,14 +46,57 @@ body{
     
 }
 .btn-basic{
+    font-family: 'Poppins', sans-serif;
     border-radius: 2px;
+    padding: 18px 10px;
     font-style: normal;
     font-weight: 600;
     font-size: 13.5px;
+    line-height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: $darkforest3;
+    width: 100%;
+    color: #FFF7FA;
     img{
         padding: 0 8px;
+    }
+    &_sun{
+        background: $sun;
+    }
+    &_middle{
+        background: $darkforest4;
+        color: $darkforest3;
+    }
+    &_ligth{
+        background: $bali5;
+        color: #264F4B;
+    }
+}
+.seetings{
+    background: $bali5;
+    color: $darkforest2;
+    &__container{
+        width: 1163px;
+        margin: auto;
+        padding-top: 60px;
+    }
+    .profile-icon{
+        width: 60px;
+        height: 60px;
+        img{
+            width: 60px;
+        }
+    }
+    .header__logo{
+        width: 182px;
+        img{
+            width: 100%;
+        }
+    }
+    .header{
+        height: 106px;
+        line-height: 106px;
     }
 }

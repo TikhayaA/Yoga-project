@@ -21,17 +21,15 @@
     &__content-wrap{
         padding-top: 280px;
     }
-    .btn-main{
-        background: $sun;
+    .btn-basic{
         width: 380px;
-        color: $bali5;
-        padding: 10px 0;
+        padding: 9px 0;
         box-shadow: 0px 6px 12px -6px rgba(39, 79, 75, 0.25);
         margin-right: 20px;
     }
-    .btn-ligth{
-        padding: 10px 20px;
-        color: #264F4B;
+    .btn-basic_ligth{
+        padding: 10px 19px;
+        width: auto;
     }
     &__files{
         background: #364140;

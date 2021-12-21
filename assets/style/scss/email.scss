@@ -22,7 +22,7 @@
         margin: 35px 0 55px;
     }
     &__btn{
-        padding: 24px 40px;
+        padding: 20px 61px;
         background: $darkforest2;
         color: $bali5;
         border-radius: 4px;
@@ -34,9 +34,9 @@
         font-size: 18px;
         line-height: 27px;
         letter-spacing: -0.005em;
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        width: fit-content;
     }
     &__btn-weigth-text{
         font-weight: 600;

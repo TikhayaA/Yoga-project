@@ -10,19 +10,10 @@
         line-height: 52px;
         color: $darkforest3;
     }
-    &__btn{
-        background: $darkforest5;
+    .btn-basic{
         width: 236px;
         padding: 10px 0;
-        color: $darkforest1;
-        font-weight: 500;
-        font-size: 13.5px;
-        line-height: 20px;
         letter-spacing: -0.005em;
-        cursor: pointer;
-        &_sun{
-            background: $sun;
-        }
     }
     &__main-container{
         width: 69.5%;

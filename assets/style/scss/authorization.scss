@@ -69,7 +69,7 @@
             text-align: center;
         }
         @media screen and (max-width: 361px){
-            width: 300px;
+            width: 97%;
             text-align: center;
         }
     }
@@ -113,16 +113,13 @@
             }
         }
         .authorization-form{
-            @media screen and (max-width: 900px){
-                margin-top: 0px;
-            }
             @media screen and (max-width: 740px){
                 margin-top: 55px;
             }
         }
         .authorization-form__label{
             @media screen and (max-width: 740px){
-                margin: 20px 0 0;
+                margin: 15px 0;
             }
         }
         .authorization-form__btn{

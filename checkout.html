@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <title>Checkout</title>
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+      <link href="assets/style/css/reset.css" rel="stylesheet"> 
+      <link href="assets/style/css/style.css" rel="stylesheet">
+   </head>
+   <body class="checkout seetings">
+       <header class="header">
+          <div class="container header__wrap">
+            <div class="header__logo"><img src="assets/svg/logo-header.svg" alt=""></div>
+            <ul class="header__menu header-menu">
+               <li class="header-menu__list header-menu__list-profile-icon"><div class="profile-icon"><img src="assets/image/icon-profile.png" alt=""></div></li>
+            </ul>
+         </div>
+       </header>
+       <main class="checkout__main">
+        <div class="seetings__container">
+            <div class="checkout__block">
+                <h1 class="account__title">Rinnovo abbonamento</h1>
+                <div class="checkout__block-wrap">
+                    <div class="prices">
+                        <p class="prices__title">Mensile</p>
+                        <p class="prices__prise"><span>€ 10,00 /</span> al mese</p>
+                        <div class="prices__btn btn-basic_sun">scaduto il <span>21/11/2021</span></div>
+                        <ul class="prices__list">
+                            <li class="prices__list-item">nomeAgevolazione</li>
+                            <li class="prices__list-item">nomeAgevolazione</li>
+                            <li class="prices__list-item">nomeAgevolazione</li>
+                            <li class="prices__list-item prices__list-item_disabled">nomeAgevolazione</li>
+                            <li class="prices__list-item prices__list-item_disabled">nomeAgevolazione</li>
+                            <li class="prices__list-item prices__list-item_disabled">nomeAgevolazione</li>
+                        </ul>
+                        <p class="prices__cancell">Disdici quando vuoi</p>
+                    </div>
+                    <div class="prices">
+                        <p class="prices__title">Annuale</p>
+                        <p class="prices__prise"><span>€ 100,00 /</span> all’anno</p>
+                        <ul class="prices__list">
+                            <li class="prices__list-item">nomeAgevolazione</li>
+                            <li class="prices__list-item">nomeAgevolazione</li>
+                            <li class="prices__list-item">nomeAgevolazione</li>
+                            <li class="prices__list-item">nomeAgevolazione</li>
+                            <li class="prices__list-item">nomeAgevolazione</li>
+                            <li class="prices__list-item">nomeAgevolazione</li>
+                        </ul>
+                        <p class="prices__cancell">Disdici quando vuoi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout__block">
+                <h2 class="checkout__title">Metodo di pagamento</h2>
+                <div class="payment">
+                    <p class="payment__title">Carte acettate</p>
+                    <div class="payment__items">
+                        <img src="assets/svg/mastercard.svg" alt="mastercard">
+                        <img src="assets/svg/maestro.svg" alt="maestro">
+                        <img src="assets/svg/payPal.svg" alt="payPal">
+                        <img src="assets/svg/visa.svg" alt="visa">
+                        <img src="assets/svg/amex.svg" alt="amex">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__title"><b>Numero Carta</b> usata per ultimo rinnovo*</div>
+                    <div class="card__number">
+                        <input type="text" class="card__item" />
+                        <input type="text" class="card__item" />
+                        <input type="text" class="card__item" />
+                        <input type="text" class="card__item" />
+                    </div>
+                    <div class="card__info">
+                        <div class="card__date">
+                            <label class="card__label" for="scade">Scade il</label>
+                            <input id="scade"  type="text" class="card__item">
+                            <input type="text" class="card__item">
+                        </div>
+                        <div class="card-cvc">
+                            <label class="card__label" for="cvc">CVC</label>
+                            <input id="cvc" type="text" placeholder="123" class="card__item">
+                        </div>
+                    </div>
+                    <div class="card__user">
+                        <label class="card__label" for="">Nome del possessore</label>
+                        <input type="text" placeholder="Nome del possessore della carta" class="card__item">
+                    </div>
+                    <div class="card__reload">
+                        <button class="btn-basic_sun btn-basic"><img src="assets/svg/reload.svg" alt="">Cambia metodo di pagamento</button>
+                    </div>
+                    <div class="authorization-checkbox">
+                        <div class="authorization-checkbox__item">
+                           <input class="authorization-checkbox__custom" id="checkbox3" name ="conditions" type="checkbox">
+                           <label class="authorization-checkbox__label" for="checkbox3">Voglio ricevere la fattura del pagamento</label>
+                           <p>Riceverai la mail con la fattura sulla tua email di registrazione a Yoga Academy.</p>
+                       </div>
+                       <div class="authorization-checkbox__item">
+                           <input class="authorization-checkbox__custom" id="checkbox4" name ="conditions" type="checkbox">
+                           <label class="authorization-checkbox__label" for="checkbox4">Accetto<a class="authorization__link" href="#"> termini e condizioni</a></label>
+                        </div>
+                        <button class="btn-basic"><span>Paga €10,00</span> (mensile)</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+       </main>
+   </body>
+</html>
