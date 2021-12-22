@@ -8,8 +8,8 @@
     }
     &__title-wrap{
         display: flex;
-        padding: 40px 0 30px;
         position: relative;
+        padding: 40px 0 31px;
         &:after{
             position: absolute;
             content: "";
@@ -18,14 +18,25 @@
             background: $darkforest2;
             bottom: 0px;
             left: 0;
-            @media screen and (max-width: 1200px){
+            @media screen and (max-width: 980px){
                 display: none;
             }
         }
         @media screen and (max-width: 980px){
-            width: 60%;
+            width: 80%;
             margin: auto;
             justify-content: space-between;
+        }
+        @media screen and (max-width: 830px){
+            width: 90%; 
+        }
+        @media screen and (max-width: 767px){
+            flex-direction: column;
+            width: 334px;
+            padding: 25px 0 0px;
+        }
+        @media screen and (max-width: 360px){
+            width: 100%; 
         }
     }
     &__title-descriptions{
@@ -35,6 +46,20 @@
         line-height: 52px;
         img{
             margin-right: 3px;
+        }
+    }
+    .profile-icon{
+        @media screen and (max-width: 420px){
+            width: 32px;
+            height: 32px; 
+            position: absolute;
+            top: 125%;
+            right: 0%;
+        }
+        img{
+            @media screen and (max-width: 420px){
+                width: 32px;
+            }
         }
     }
 }

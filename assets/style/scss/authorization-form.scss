@@ -105,4 +105,38 @@
             position: static;
         }
     }
+    .checkbox__custom + label::before {
+        @media screen and (min-width: 740px) and (max-width: 1050px){
+            width: 20px;
+            height: 20px;
+        }
+        @media screen and (max-width: 740px){
+            left: 25px;
+        }
+        @media screen and (max-width: 350px){
+            left: 10px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .checkbox__label{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: -0.005em;
+        color: #F5FCFA;
+        padding-left: 34px;
+        cursor: pointer;
+        position: relative;
+        @media screen and (max-width: 740px){
+            padding-left: 50px;
+        }
+        @media screen and (max-width: 350px){
+            padding-left: 34px;
+        }
+        a{
+            margin-left: 5px;
+        }
+    }
 }

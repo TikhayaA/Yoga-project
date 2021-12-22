@@ -2,11 +2,6 @@
     height: 68px;
     line-height: 68px;
     background: $darkforest1;
-    @media screen and (max-width: 767px){
-        background: transparent;
-        position: relative;
-        z-index: 2;
-    }
     &__wrap{
         display: flex;
         justify-content: space-between;
@@ -25,6 +20,13 @@
         path{
             fill:$bali5;
         }
+    }
+}
+.home .header{
+    @media screen and (max-width: 767px){
+        background: transparent;
+        position: relative;
+        z-index: 2;
     }
 }
     

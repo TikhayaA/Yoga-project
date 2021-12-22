@@ -1,13 +1,22 @@
 .checkout{
     .seetings__container{
-        width: 1212px;
+        max-width: 1212px;
         margin: auto;
         display: flex;
         justify-content: start;
-        >:nth-child(2){
-            width: calc(50% - 190px);
+        @media screen and (max-width: 1360px){
+            justify-content: center;
+        }
+        @media screen and (max-width: 1300px){
+            max-width: 900px;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media screen and (max-width: 900px){
+            width: 95%;
+        }
+        >:nth-child(1){
             position: relative;
-            padding: 17px 0 31px 54px;
             &:after{
                 position: absolute;
                 content: "";
@@ -15,7 +24,21 @@
                 height: 100%;
                 background: $darkforest3;
                 top: 0;
-                left: 0;
+                right: 0;
+                @media screen and (max-width: 1300px){
+                    content: none;               
+              }
+            }
+        }
+        >:nth-child(2){
+            width: calc(50% - 165px);
+            padding: 17px 0 31px 54px;
+            @media screen and (max-width: 1300px){
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 0;
             }
         }
     }
@@ -23,13 +46,37 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        margin-top:66px;
+        margin-top: 66px;
+        position: relative;
+        @media screen and (max-width: 1300px){
+           justify-content: space-between;
+           width: 500px;
+           margin-bottom: 40px;
+           padding-bottom: 40px;
+        }
+        @media screen and (max-width: 530px){
+           flex-direction: column;
+           align-items: center;
+           width: auto;
+        }
+        &:after{
+            @media screen and (max-width: 1300px){
+                width: 100%;
+                height: 2px;
+                top: auto;
+                bottom: 0;
+                position: absolute;
+                content: "";
+                background: $darkforest3;
+                right: 0;
+            }
+        }
     }
     .prices{
         border: 2px solid #36706A;
         border-radius: 2px;
         width: calc(50% - 20px);
-        padding: 15px 20px 20px 10px;
+        padding: 13px 20px 13px 10px;
         width: 239px;
         box-sizing: border-box;
         margin-right: 20px;
@@ -41,6 +88,12 @@
         -moz-transition: all 0.5s;
         -ms-transition: all 0.5s;
         -o-transition: all 0.5s;
+        @media screen and (max-width: 1300px){
+           margin-right: 0;
+        }
+        @media screen and (max-width: 530px){
+            margin-bottom: 30px;
+        }
         &:hover{
             background: $darkforest1;
             .prices__title,  .prices__list-item, .prices__cancell, .prices__prise{
@@ -125,6 +178,14 @@
     }
     &__block{
         width: 50%;
+        @media screen and (max-width: 1300px){
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+        
     }
     &__title{
         font-size: 28px;
@@ -132,6 +193,9 @@
         font-weight: 600;
         letter-spacing: 0.36px;
         color: $darkforest1;
+        @media screen and (max-width: 530px){
+            text-align: center;
+         }
     }
     .payment{
         margin-top: 15px;
@@ -152,6 +216,17 @@
     }
     .card{
         margin-top: 20px;
+        width: 416px;
+        @media screen and (max-width: 530px){
+            width: 360px;
+         }
+         @media screen and (max-width: 369px){
+            width: 310px;
+         }
+         @media screen and (max-width: 319px){
+            width: 280px;
+         }
+
         &__title{
             font-size: 15px;
             line-height: 20px;
@@ -172,7 +247,7 @@
             letter-spacing: -0.41px;
             color: #264F4B;
             box-sizing: border-box;
-            padding: 0 20px;
+            padding: 0 10px;
             border: 1px solid transparent;
             transition: all 0.5s;
             -webkit-transition: all 0.5s;
@@ -182,6 +257,15 @@
             &:hover{
                 border: 1px solid $darkforest3;
             }
+            @media screen and (max-width: 530px){
+                width: 87px;
+             }
+             @media screen and (max-width: 369px){
+                width: 75px;
+             }
+             @media screen and (max-width: 319px){
+                width: 66px;
+             }
         }
         &__number{
             margin-bottom: 23px;
@@ -248,6 +332,11 @@
         line-height: 18px;
         letter-spacing: -0.08px;
     }
+    .checkbox{
+        @media screen and (max-width: 1300px){
+           margin-top: 40px;
+        }
+    }
     .checkbox .checkbox__custom + label::before{
         width: 20px;
         height: 20px;
@@ -261,5 +350,10 @@
         color: $darkforest3;
         padding-left: 27px;
         margin-top: 5px;
+    }
+    .seetings__title{
+        @media screen and (max-width: 530px){
+            text-align: center;
+         }
     }
 }
