@@ -1,0 +1,106 @@
+.modifica-pagamento{
+    &__container-wrap{
+        max-width: 1212px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .seetings__title{
+        margin: 60px 0 40px;
+        @media screen and (max-width: 1300px){
+            margin: 60px auto 40px;
+            width: 85%;
+        }
+        @media screen and (max-width: 500px){
+            width: 100%;
+        }
+    }
+    .seetings__container{
+        width: 100%;
+        padding-top: 0;
+        @media screen and (max-width: 1300px){
+            flex-direction: row;
+            align-items: unset;
+        }
+        @media screen and (max-width: 767px){
+            flex-direction: column;
+        }
+        @media screen and (max-width: 767px){
+            align-self: flex-start;
+            max-width: 416px;
+        }
+        @media screen and (max-width: 530px){
+            width: 360px;
+         }
+         @media screen and (max-width: 369px){
+            width: 310px;
+         }
+         @media screen and (max-width: 319px){
+            width: 280px;
+         }
+    }
+    .checkout__block{
+        width: 25%;
+        @media screen and (max-width: 1300px){
+            align-items: unset;
+        }
+        @media screen and (max-width: 767px){
+            align-self: flex-start;
+            width: 100%;
+        }
+        
+    }
+    &__icon-card{
+        display: inline-block;
+        background: $sun;
+        border: 4px solid #FAE3C8;
+        width: 10px;
+        height: 10px;
+        vertical-align: middle;
+        margin: 0 5px 0 -4px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%; 
+    }
+    .payment{
+        margin-top: 0;
+    }
+    .seetings__container > :nth-child(2){
+        padding: 0px 0 112px 108px;
+        @media screen and (max-width: 1300px){
+            align-items: flex-start;
+            padding: 0px 0 112px 60px;
+        }
+        @media screen and (max-width: 767px){
+            padding-left: 0;
+        }
+    }
+    .seetings__container > :nth-child(1){
+        @media screen and (max-width: 1300px){
+             padding-right: 40px;
+        }
+        @media screen and (max-width: 767px){
+            margin-bottom: 40px;
+            padding-right: 0;
+        }
+    }
+    
+    .seetings__container > :nth-child(1):after{
+        @media screen and (max-width: 1300px){
+            content: '';
+        }
+        @media screen and (max-width: 767px){
+            width: 100%;
+            height: 2px;
+            top: unset;
+            bottom: -20px;
+        }
+    }
+    .card__reload {
+        .btn-basic {
+            padding: 18px;
+        }
+    }
+}

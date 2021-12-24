@@ -7,6 +7,9 @@
         justify-content: space-between;
         padding-right: 13px;
         box-sizing: border-box;
+        @media screen and (max-width: 767px){
+            padding-top: 30px;
+        }
     }
     &__svg-list{
         position: absolute;
@@ -19,6 +22,88 @@
         -o-transform: translate(-50%, 0);
         path{
             fill:$bali5;
+        }
+    }
+    &__sub-menu-wrap{
+        // display: none;
+        width: 200px;
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+        z-index: 1;
+    }
+    .sub-menu-list{
+        width: 100%;
+        height: fit-content;
+        background: $darkforest3;
+        border-radius: 2px;
+        padding: 1px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+        margin-top: 23px;
+        :nth-child(1){
+            border-radius: 2px 2px 0 0;
+            -webkit-border-radius: 2px 2px 0 0;
+            -moz-border-radius: 2px 2px 0 0;
+            -ms-border-radius: 2px 2px 0 0;
+            -o-border-radius: 2px 2px 0 0;
+        }
+        :last-child{
+            border-radius: 0 0 2px 2px;
+            margin-bottom: 0px;
+            -webkit-border-radius: 0 0 2px 2px;
+            -moz-border-radius: 0 0 2px 2px;
+            -ms-border-radius: 0 0 2px 2px;
+            -o-border-radius: 0 0 2px 2px;
+        }
+        &__item{
+            position: relative;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 20px;
+            color: $darkforest1;
+            background: $darkforest4;
+            padding: 5px 25px;
+            margin-bottom: 1px;
+            &:after, &:before{
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+                -webkit-transform: translate(0, -50%);
+                -moz-transform: translate(0, -50%);
+                -ms-transform: translate(0, -50%);
+                -o-transform: translate(0, -50%);
+            }
+            &:after{
+                content: url("../../svg/bell2.svg");
+                left: 5px;
+            }
+            &:before{
+                content: url("../../svg/cross.svg");
+                right: 5px;
+                cursor: pointer;
+                width: 15px;
+                height: 20px;
+            }
+            &_single{
+                border-radius: 2px;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                -ms-border-radius: 2px;
+                -o-border-radius: 2px;
+            }
         }
     }
 }

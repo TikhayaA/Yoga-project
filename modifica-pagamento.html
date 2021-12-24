@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <title>Modifica pagamento</title>
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+      <link href="assets/style/css/reset.css" rel="stylesheet"> 
+      <link href="assets/style/css/style.css" rel="stylesheet">
+   </head>
+   <body class="checkout seetings modifica-pagamento">
+       <header class="header">
+          <div class="container header__wrap">
+            <div class="header__logo"><img src="assets/svg/logo-header.svg" alt=""></div>
+            <ul class="header__menu header-menu">
+               <li class="header-menu__list header-menu__list-profile-icon"><div class="profile-icon"><img src="assets/image/icon-profile.png" alt=""></div></li>
+            </ul>
+         </div>
+       </header>
+       <main class="modifica-pagamento__container-wrap">
+        <h1 class="seetings__title">Modifica Metodo di pagamento</h1>
+        <div class="seetings__container">
+            <div class="checkout__block">
+                <p class="card__label">Carte registrate</p>
+                <div class="subscription__field-mail subscription__field">
+                    <span class="modifica-pagamento__icon-card"></span>
+                    <img src="assets/svg/fa-solid_money-check.svg" alt=""> <span>••••  ••••  ••••</span> <span>3456</span>
+                </div>
+            </div>
+            <div class="checkout__block">
+                <div class="payment">
+                    <p class="payment__title">Carte acettate</p>
+                    <div class="payment__items">
+                        <img src="assets/svg/mastercard.svg" alt="mastercard">
+                        <img src="assets/svg/maestro.svg" alt="maestro">
+                        <img src="assets/svg/payPal.svg" alt="payPal">
+                        <img src="assets/svg/visa.svg" alt="visa">
+                        <img src="assets/svg/amex.svg" alt="amex">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__title">Numero Carta</div>
+                    <div class="card__number">
+                        <input type="text" class="card__item" />
+                        <input type="text" class="card__item" />
+                        <input type="text" class="card__item" />
+                        <input type="text" class="card__item" />
+                    </div>
+                    <div class="card__info">
+                        <div class="card__date">
+                            <label class="card__label" for="scade">Scade il</label>
+                            <input id="scade"  type="text" class="card__item">
+                            <input type="text" class="card__item">
+                        </div>
+                        <div class="card-cvc">
+                            <label class="card__label" for="cvc">CVC</label>
+                            <input id="cvc" type="text" placeholder="123" class="card__item">
+                        </div>
+                    </div>
+                    <div class="card__user">
+                        <label class="card__label" for="">Nome del possessore</label>
+                        <input type="text" placeholder="Nome del possessore della carta" class="card__item">
+                    </div>
+                    <div class="card__reload">
+                        <button class="btn-basic_sun btn-basic"><img src="assets/svg/reload.svg" alt="">Cambia metodo di pagamento</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </main>
+   </body>
+</html>

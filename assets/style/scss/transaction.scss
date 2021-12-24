@@ -1,0 +1,97 @@
+.transaction{
+    .account__container{
+        overflow: auto;
+    }
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+        width: 983px;
+    }
+    .seetings__title{
+        margin: 60px 0 21px;
+    }
+    &__table{
+       >:nth-child(even){
+        border-bottom: 1px solid $darkforest5;
+        background: #ECF9F5;
+       }
+       >:nth-child(odd){
+        background: #E2F6F0;
+       }
+       >:first-child{
+        padding: 16px 70px 28px 81px;
+        background: transparent;
+       }
+    }
+    &__string{
+        display: flex;
+        flex-direction: row;
+        padding: 16px 70px 16px 81px;
+        color: #034349;
+        font-size: 17px;
+        line-height: 21px;
+        font-weight: 500;
+        letter-spacing: -0.41px;
+        text-align: left;
+        height: 55px;
+        box-sizing: border-box;
+        >:nth-child(1){
+            width: 18%;
+        }
+        >:nth-child(2){
+            width: 22%;
+        }
+        >:nth-child(3){
+            width: 25%;
+        }
+        >:nth-child(4){
+            width: 30%;
+        }
+        >:nth-child(5){
+            width: 9%;
+        }
+    }
+    &__string-title{
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: -0.0008em;
+        height: 20px;
+    }
+    .pagination{
+      width: 12%; 
+      margin: 20px 0 20px;
+      align-self: end;
+      &__element{
+          color: $darkforest2;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 18px;
+          letter-spacing: -0.0008em;
+          position: relative;
+          text-align: center;
+          &:after, &:before{
+              position: absolute;
+              content: url("../../svg/script.svg");
+              top: 2px;
+              width: 5px;
+            cursor: pointer;
+        }
+          &:before{
+            left: 8px;
+          }
+          &:after{
+              top: -3px;
+            right: 9px;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+        }
+      } 
+      &__last-page{
+        color: $darkforest3;
+        cursor: pointer;
+      }
+    }
+}

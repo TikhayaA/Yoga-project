@@ -9,6 +9,10 @@
     @media screen and (max-width: 767px){
         height: 468px;
         top: -68px;
+        background: linear-gradient(180deg, #264F4B 0%, rgba(38, 79, 75, 0) 27.6%, rgba(38, 79, 75, 0.247849) 60.41%, rgba(38, 79, 75, 0.553075) 79.77%, #264F4B 100%), linear-gradient(0deg, rgba(38, 79, 75, 0.8), rgba(38, 79, 75, 0.8)), url('../../image/baner-home.jpeg');
+        background-size: cover;
+        background-blend-mode: normal, lighten, normal;
+        background-position: center;
     }
     &__p{
         font-style: normal;

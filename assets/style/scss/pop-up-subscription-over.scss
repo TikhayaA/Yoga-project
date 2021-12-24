@@ -13,11 +13,26 @@
     border-radius: 4px;
     padding: 100px 50px;
     width: fit-content;
+    @media screen and (max-width: 1200px){
+        width: 80%;
+    }
+    @media screen and (max-width: 600px){
+        padding: 40px 20px;
+    }
     .email__wrap{
         width: 100%;
+    }
+    .email__title {
+        @media screen and (max-width: 600px){
+            font-size: 22px;
+            line-height: 30px;
+        }
     }
     .email__btn{
         width: fit-content;
         padding: 24px 97px;
+        @media screen and (max-width: 600px){
+            padding: 20px 20px;
+        }
     }
 }

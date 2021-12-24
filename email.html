@@ -10,19 +10,29 @@
       <link href="assets/style/css/style.css" rel="stylesheet">
    </head>
    <body class="seetings">
-       <header class="header ">
+       <header class="header">
           <div class="container header__wrap">
             <div class="header__logo"><img src="assets/svg/logo-header.svg" alt=""></div>
             <ul class="header__menu header-menu">
-               <li class="header-menu__list header-menu__list-profile-icon"><div class="profile-icon"><img src="assets/image/icon-profile.png" alt=""></div></li>
-            </ul>
+               <li class="header-menu__list header-menu__list-profile-icon header-menu__list-profile-icon_active"><div class="profile-icon"><img src="assets/image/icon-profile.png" alt=""></div>
+                  <div class="header__sub-menu-wrap">
+                     <svg class="header__svg-list" width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.6341 1.17105C11.019 0.504384 11.9812 0.504384 12.3661 1.17105L22.3254 18.4211H0.674805L10.6341 1.17105Z" fill="#FFFFF"/>
+                     </svg>
+                     <ul class="sub-menu-list">
+                        <li class="sub-menu-list__item"><a href="#">Profile image</a></li>
+                        <li class="sub-menu-list__item"><a href="#">Account</a></li>
+                        <li class="sub-menu-list__item"><a href="#">Aiuto</a></li>
+                     </ul>
+                  </div>
+               </li>            </ul>
          </div>
        </header>
        <main class="account__main email">
         <div class="email__wrap">
             <img src="assets/svg/email-icon.svg" alt="">
             <h1 class="email__title">Prima di procedere devi confermare la tua identità</h1>
-            <button class="btn-basic email__btn"><span>Invia una mail con il codice a:</span><span class="email__btn-weigth-text"> emailDiProva@gmail.com</span> <img src="assets/svg/email.svg" alt=""></button>
+            <button class="btn-basic email__btn btn-basic_dark"><span>Invia una mail con il codice a:</span><span class="email__btn-weigth-text"> emailDiProva@gmail.com</span> <img src="assets/svg/email.svg" alt=""></button>
         </div>
        </main>
    </body>

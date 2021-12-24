@@ -6,9 +6,15 @@
     top: 26px;
     left: 50%;
     transform: translate(-50%, 0);
+    overflow: hidden;
     @media screen and (max-width: 800px){
         width: 100%;
-        top: 108px;
+        top: 40px;
+    }
+    &__list-wrap{
+        @media screen and (max-width: 400px){
+            padding: 0 20px;
+        }
     }
     &__cross{
         width: 28px;
@@ -30,16 +36,22 @@
         left: 19px;
         z-index: 1;
         align-items: center;
+        @media screen and (max-width: 600px){
+            top: 20px;
+        }
     }
     &__back-btn{
         width: 28px;
         height: 28px;
         cursor: pointer;
         z-index: 1;
-        &:after{
-            position: absolute;
-            content: url("../../svg/Subtract.svg");
-        }
+        @media screen and (max-width: 600px){
+            svg{
+                path{
+                    fill:#FFFFFF;
+                }
+            }
+         }
     }
     &__back-title{
         font-style: normal;
@@ -49,11 +61,20 @@
         letter-spacing: 0.38px;
         color: $darkforest1;
         margin-left: 10px;
+        @media screen and (max-width: 600px){
+            display: none;
+        }
     }
     .btn-basic_ligth{
         width: 365px;
         padding: 15px 10px;
         margin-right: 10px;
+        @media screen and (max-width: 400px){
+            width: 100%;
+            margin: 0;
+            padding: 10px 10px;
+            font-size: 12px;
+        }
     }
     .btn-like{
         width: 50px;
@@ -64,14 +85,22 @@
         &:after{
             position: absolute;
             content: url("../../svg/like20px.svg");
-            transform: translate(0, -50%);
-            top: 50%;
-        }
-
+            transform: translate(0, -55%);
+            top: 55%;
+            -webkit-transform: translate(0, -55%);
+            -moz-transform: translate(0, -55%);
+            -ms-transform: translate(0, -55%);
+            -o-transform: translate(0, -55%);
+            }
     }
     .main-title{
         font-size: 34px;
         line-height: 41px;
+        position: relative;
+        z-index: 1;
+        @media screen and (max-width: 400px){
+            line-height: 31px;
+        }        
     }
     .main-title-p{
         font-style: normal;
@@ -84,15 +113,45 @@
         background: linear-gradient(180deg, #36706A 0%, rgba(54, 112, 106, 0.35) 18.57%, rgba(54, 112, 106, 0.247849) 60.41%, rgba(54, 112, 106, 0.553075) 79.77%, #36706A 100%), linear-gradient(0deg, rgba(38, 79, 75, 0.8), rgba(38, 79, 75, 0.8)), url('../../image/baner-home.jpeg');
         background-size: cover;
         height: 514px;
-        padding: 362px 20px 20px;
+        padding: 20px 20px 20px;
         box-sizing: border-box;
         background-position: center;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        @media screen and (max-width: 767px){
+            top: 0;
+        }
         @media screen and (max-width: 740px){
             height: 352px;
+            padding: 76px 20px 20px;
+        }
+        @media screen and (max-width: 600px){
+            justify-content: flex-start;
         }
     }
     .banner__btn-wrap {
-      margin-bottom: 10px;   
+      margin-bottom: 10px; 
+      position: relative;
+      z-index: 1; 
+        @media screen and (max-width: 767px){
+        margin-top: 14px;
+        } 
+        @media screen and (max-width: 600px){
+            position: absolute;
+            bottom: -16%;
+        }
+        @media screen and (max-width: 400px){
+            width: 90%;
+            bottom: -12%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            -webkit-transform: translate(-50%, 0);
+            -moz-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+            -o-transform: translate(-50%, 0);
+        }
     }
     &__descriptions{
         display: flex;
@@ -102,11 +161,29 @@
         background: $darkforest2;
         margin-top: -1px;
         position: relative;
+        @media screen and (max-width: 600px){
+            padding: 0px 20px 0;
+            margin-top: 0px;
+            position: absolute;
+            top: 12%;
+            background: transparent;
+            flex-direction: column-reverse;;
+        }
+        @media screen and (max-width: 400px){
+            top: 17%;
+        }
         >:nth-child(1){
             width: 51%;
+            @media screen and (max-width: 600px){
+                width: 100%;
+            }
         }
         >:nth-child(2){
             text-align: right;
+            @media screen and (max-width: 600px){
+                text-align: left;
+                margin-bottom: 30px;
+            }
         }
     }
     &__descriptions-text{
@@ -115,6 +192,12 @@
         font-size: 13.5034px;
         line-height: 29px;
         color: #FFFFFF;
+        @media screen and (max-width: 600px){
+           line-height: 20px;
+        }
+        @media screen and (max-width: 320px){
+            font-size: 11px;
+         }
     }
     &__descriptions-weight-text{
         font-weight: 600;
@@ -124,6 +207,13 @@
         line-height: 42px;
         margin-bottom: 18px;
         padding: 0 20px;
+        @media screen and (max-width: 600px){
+            margin: 60px 0 0px;
+        }
+        @media screen and (max-width: 400px){
+            font-size: 22px;
+            line-height: 28px;
+        }
     }
     .courses-card__progress-bar{
         position: absolute;
@@ -131,12 +221,21 @@
         bottom: 69px;
         width: 80px;
         height: 80px;
+        @media screen and (max-width: 600px){
+            bottom: 153px;
+            width: 45px;
+            height: 45px;
+            
+        }
         div[role="progressbar"] {
             display: grid;
             place-items: center;
             font-family: 'Poppins', sans-serif;
             font-size: 16px;
             color: #264F4B;
+            @media screen and (max-width: 600px){
+                font-size: 11px;
+            }
           }
           div[role="progressbar"]::before {
             counter-reset: percentage var(--value);
@@ -146,39 +245,31 @@
     .courses-card__progress-bar-item{
         width: 64px;
         height: 64px;
+        @media screen and (max-width: 600px){
+            width: 30px;
+            height: 30px;
+        }
     }
     .like-big{
         position: relative;
         bottom: auto;
         right: auto;
-    }                   
-
+    } 
+    .course-pop-up__cross{
+        @media screen and (max-width: 740px){
+            top: 20px;
+            right: 20px;
+        }
+    }  
 }
 .pratiche{
-    .banner{
-        background: linear-gradient(180deg, #59AFA7 0%, rgba(89, 175, 167, 0.35) 15.38%, rgba(89, 175, 167, 0.247849) 50.04%, rgba(89, 175, 167, 0.553075) 66.07%, #59AFA7 82.83%), url('../../image/pop-up-banner2.jpeg');
-        background-size: cover;
-        height: 533px;
-        padding: 413px 20px 20px;
-        .time-video-block{
-            margin-top: 3px;
-            position: relative;
-            z-index: 1;
-            span{
-                letter-spacing: -0.5px;
-                font-size: 15px;
-                line-height: 20px;
-            }
-            img{
-                width: 17px;
-            }
-        }
-    }
     .course-pop-up{
         background: $darkforest3;
         &__descriptions{
             background: $darkforest3;
-            margin-top: 45px;
+            margin-top: -1px;
+            padding-top: 57px;
+            position: static;
             >:nth-child(1){
                 flex-direction: column;
                 margin-right: 20px;
@@ -192,27 +283,90 @@
             display: flex;
             justify-content: space-around;
             margin-top: 50px;
+            @media screen and (max-width: 600px){
+                justify-content: space-between;
+            }
             p{
                 font-style: normal;
                 font-weight: 600;
                 font-size: 12px;
                 line-height: 16px;
                 margin-top: 11px;
+                @media screen and (max-width: 600px){
+                    margin-top: 0;
+                }
             }
         }
         &__icon-meditation-item{
             display: flex;
             flex-direction: column;
             align-items: center;
+            @media screen and (max-width: 600px){
+               flex-direction: row;
+             }
+             img{
+                @media screen and (max-width: 600px){
+                    width: 30px;
+                    margin-right: 4px;
+                  }
+             }
         }
         &__list-container{
             margin-top: 100px;
+            @media screen and (max-width: 600px){
+               display: none;
+            }
         }
         .course-list-item_active{
             background: rgba(189, 223, 220, 0.7);
         }
         .banner__btn-wrap{
             margin-top: 10px;
+            @media screen and (max-width: 600px){
+                margin-top: 2x0px;
+               flex-direction: column-reverse;
+               position: static;
+               transform: none;
+               -webkit-transform: none;
+               -moz-transform: none;
+               -ms-transform: none;
+               -o-transform: none;
+            }
+            .btn-next{
+                display: none;
+                @media screen and (max-width: 600px){
+                    display: block;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 28px;
+                    letter-spacing: 0.35px;
+                    color: #FFFFFF;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                img{
+                    margin-left: 6px;
+                }
+            }
+        }
+         .btn-basic_ligth{
+            @media screen and (max-width: 760px){
+                width: 280px;
+            }
+            @media screen and (max-width: 600px){
+                margin: 90px 0 0;
+                align-self: center;
+            }
+        }
+        .course-pop-up__icon-meditation-group{
+            @media screen and (max-width: 600px){
+                margin-top: 0px;
+            }
+        }
+        .course-pop-up__descriptions-text{
+            @media screen and (max-width: 600px){
+                margin-top: 49px;
+            }
         }
         .main-title-p{
             position: relative;
@@ -222,6 +376,41 @@
         .courses-card__progress-bar{
             right: 9px;
             bottom: 39px;
+             @media screen and (max-width: 600px){
+                right: 21px;
+                bottom: -56px;
+            }
+            @media screen and (max-width: 310px){
+                bottom: -25px;
+            }
+        }
+        .banner{
+            background: linear-gradient(180deg, #59AFA7 0%, rgba(89, 175, 167, 0.35) 15.38%, rgba(89, 175, 167, 0.247849) 50.04%, rgba(89, 175, 167, 0.553075) 66.07%, #59AFA7 82.83%), url('../../image/pop-up-banner2.jpeg');
+            background-size: cover;
+            height: 533px;
+            @media screen and (max-width: 600px){
+               height: 220px;
+               background-position: center;
+            }
+            .wrap-content{
+                @media screen and (max-width: 600px){
+                    position: absolute;
+                    bottom: -36%;
+                 }
+            }
+            .time-video-block{
+                margin-top: 3px;
+                position: relative;
+                z-index: 1;
+                span{
+                    letter-spacing: -0.5px;
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+                img{
+                    width: 17px;
+                }
+            }
         }
     }
     .course-list-item{
@@ -233,8 +422,7 @@
         &:hover{
             background: $darkforest2;
         }
-    }
-    
+    }  
 }
 .time-video-block{
     span{

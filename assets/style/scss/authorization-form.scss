@@ -131,9 +131,11 @@
         position: relative;
         @media screen and (max-width: 740px){
             padding-left: 50px;
+            font-size: 17px;
         }
         @media screen and (max-width: 350px){
             padding-left: 34px;
+            font-size: 15px;
         }
         a{
             margin-left: 5px;

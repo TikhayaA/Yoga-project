@@ -64,6 +64,9 @@ body{
     img{
         padding: 0 8px;
     }
+    &_dark{
+        background: $darkforest2;
+    }
     &_sun{
         background: $sun;
     }
@@ -116,6 +119,11 @@ body{
             height: 95px;
             line-height: 95px;
         }
+        .header__wrap{
+            @media screen and (max-width: 767px){
+                padding-top: 0px;
+            }
+        }
     }
     &__title{
         font-style: normal;
@@ -127,6 +135,14 @@ body{
         @media screen and (max-width: 767px){
             font-size: 34px;
             line-height: 31px;
+        }
+    }
+    .header .header__sub-menu-wrap{
+        top: 59px;
+    }
+    .header .header__svg-list{
+        @media screen and (max-width: 900px){
+            left: 78%;
         }
     }
 }

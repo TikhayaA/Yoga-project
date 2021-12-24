@@ -11,20 +11,64 @@
     }
     &__list-profile-icon{
         margin-left: 52px;
+        position: relative;
         @media screen and (max-width: 767px){
             margin-left: 25px;
         }
         &:after{
             position: absolute;
             content: url("../../svg/Vector-list.svg");
-            top: 0;
-            right: -16px;
+            top: -17px;
+            right: -14px;
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -ms-transition: all 0.4s;
+            -o-transition: all 0.4s;
             @media screen and (max-width: 767px){
                 display: none;
             }
         }
+        .sub-menu-list__item{
+            padding: 5px;
+            &:after, &:before{
+                content: none;
+            }
+        }
+        .header__sub-menu-wrap{
+            width: 130px;
+            top: 32px;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            @media screen and(max-width: 900px){
+                left: unset;
+                right: 0;
+                transform: none;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+            }
+        }
+        .header__svg-list{
+            @media screen and (max-width: 900px){
+                left: 88%;
+            }
+        }
+        &_active{
+            &:after{
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+            }
+        }
     }
-    :nth-child(2){
+    >:nth-child(2){
         @media screen and (max-width: 767px){
             display: none;
         }

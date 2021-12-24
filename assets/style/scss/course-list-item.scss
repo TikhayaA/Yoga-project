@@ -2,12 +2,14 @@
     display: flex;
     padding: 20px 43px 20px 27px;
     position: relative;
-    cursor: pointer;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
+    @media screen and (max-width: 400px){
+        padding: 20px 0px 10px 0px;
+    }
     &:hover{
         background: $darkforest1;
     }
@@ -26,6 +28,12 @@
         font-size: 23.99px;
         line-height: 36px;
         align-self: center;
+        width: 29px;
+        @media screen and (max-width: 400px){
+            font-size: 15px;
+            line-height: 20px;
+            width: 15px;
+        }
     }
     &__video{
         width: 259px;
@@ -36,20 +44,18 @@
         border-radius: 2px;
         background-size: cover;
         background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        @media screen and (max-width: 400px){
+            width: 105px;
+            height: 57px;
+            margin: 0 6px 0 6px;
+        }
         >img{
             width: 100%;
         }
-    }
-    &__btn-play{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        cursor: pointer;
     }
     &__descriptions{
         display: flex;
@@ -63,9 +69,18 @@
         font-size: 20px;
         line-height: 24px;
         width: 45%;
+        @media screen and (max-width: 400px){
+            font-size: 15px;
+            line-height: 20px;
+            width: 100%;
+        }
+        @media screen and (max-width: 320px){
+            font-size: 11px;
+        }
     }
     &__info{
         display: flex;
+       
         img{
             margin-right: 5px;
         }
@@ -75,6 +90,11 @@
             font-size: 13px;
             line-height: 18px;
         }
+        >:first-child{
+            @media screen and (max-width: 600px){
+                display: none;
+            }
+        }
     }
     &__icon-wrap{
         display: flex;
@@ -83,6 +103,9 @@
         align-items: center;
         width: 5%;
         padding: 10px 0;
+        @media screen and (max-width: 600px){
+            display: none;
+        }
         >div{
             cursor: pointer;
         }
@@ -92,6 +115,25 @@
             font-size: 13px;
             line-height: 18px;
         }
-       
     }
+    .btn-play{
+        img{
+            @media screen and (max-width: 400px){
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    
+}
+.btn-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    cursor: pointer;
 }

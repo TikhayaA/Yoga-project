@@ -30,12 +30,16 @@
             line-height: 23px;
         }
     }
+    &__btn-wrap{
+        .btn-basic{
+            color: $darkforest1;
+        }
+    }
     .btn-basic{
         width: 236px;
         padding: 10px 0;
         letter-spacing: -0.005em;
         font-size: 13px;
-        color: $darkforest1;
         background: $darkforest5;
         @media screen and (max-width: 767px){
            margin: auto;
@@ -229,10 +233,6 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
-            }
-            @media screen and (max-width: 767px){
-                // display: flex;
-                // flex-direction: column;
             }
         }
     }
